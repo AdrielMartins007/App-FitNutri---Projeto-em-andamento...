@@ -1,0 +1,2558 @@
+[
+  {
+    "nome": "Banana nanica",
+    "porcao": "1 unidade média (~100 g)",
+    "calorias": 87,
+    "proteinas": "1 g",
+    "carboidratos": "22 g",
+    "gorduras": "0.2 g",
+    "icone": "🍌"
+  },
+  {
+    "nome": "Maçã",
+    "porcao": "1 unidade média (~100 g)",
+    "calorias": 85,
+    "proteinas": "0.5 g",
+    "carboidratos": "21 g",
+    "gorduras": "0.2 g",
+    "icone": "🍎"
+  },
+  {
+    "nome": "Pera",
+    "porcao": "1 unidade média (~100 g)",
+    "calorias": 53,
+    "proteinas": "0.4 g",
+    "carboidratos": "14 g",
+    "gorduras": "0.1 g",
+    "icone": "🍐"
+  },
+  {
+    "nome": "Uva",
+    "porcao": "10 uvas (~100 g)",
+    "calorias": 70,
+    "proteinas": "0.7 g",
+    "carboidratos": "18 g",
+    "gorduras": "0.2 g",
+    "icone": "🍇"
+  },
+  {
+    "nome": "Abacaxi",
+    "porcao": "1 fatia (80 g)",
+    "calorias": 50,
+    "proteinas": "0.5 g",
+    "carboidratos": "13 g",
+    "gorduras": "0.1 g",
+    "icone": "🍍"
+  },
+  {
+    "nome": "Peito de frango (grelhado)",
+    "porcao": "100 g",
+    "calorias": 165,
+    "proteinas": "31 g",
+    "carboidratos": "0 g",
+    "gorduras": "3.6 g",
+    "icone": "🍗"
+  },
+  {
+    "nome": "Carne bovina magra (assada)",
+    "porcao": "100 g",
+    "calorias": 250,
+    "proteinas": "30 g",
+    "carboidratos": "0 g",
+    "gorduras": "18 g",
+    "icone": "🥩"
+  },
+  {
+    "nome": "Queijo muçarela",
+    "porcao": "50 g",
+    "calorias": 166,
+    "proteinas": "12 g",
+    "carboidratos": "1 g",
+    "gorduras": "13 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Brócolis cozido",
+    "porcao": "100 g",
+    "calorias": 34,
+    "proteinas": "3 g",
+    "carboidratos": "6 g",
+    "gorduras": "0.4 g",
+    "icone": "🥦"
+  },
+  {
+    "nome": "Arroz integral",
+    "porcao": "100 g",
+    "calorias": 111,
+    "proteinas": "2.6 g",
+    "carboidratos": "23 g",
+    "gorduras": "0.9 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Feijão carioca",
+    "porcao": "100 g",
+    "calorias": 76,
+    "proteinas": "5.4 g",
+    "carboidratos": "13 g",
+    "gorduras": "0.5 g",
+    "icone": "🫘"
+  },
+  {
+    "nome": "Ovo cozido",
+    "porcao": "100 g (~2 ovos)",
+    "calorias": 155,
+    "proteinas": "12 g",
+    "carboidratos": "1.1 g",
+    "gorduras": "11 g",
+    "icone": "🥚"
+  },
+  {
+    "nome": "Pizza de Atum com cebola",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 205,
+    "proteinas": "14 g",
+    "carboidratos": "18 g",
+    "gorduras": "9 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Calabresa com cebola",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 319,
+    "proteinas": "12 g",
+    "carboidratos": "27 g",
+    "gorduras": "18 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza Califórnia",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 308,
+    "proteinas": "10 g",
+    "carboidratos": "30 g",
+    "gorduras": "14 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Champignon com mussarela",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 253,
+    "proteinas": "11 g",
+    "carboidratos": "23 g",
+    "gorduras": "10 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Escarola, palmito e mussarela",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 242,
+    "proteinas": "9 g",
+    "carboidratos": "21 g",
+    "gorduras": "10 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Frango com catupiry",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 354,
+    "proteinas": "18 g",
+    "carboidratos": "25 g",
+    "gorduras": "18 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Lombo canadense, cebola e azeitonas",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 310,
+    "proteinas": "16 g",
+    "carboidratos": "24 g",
+    "gorduras": "13 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza Marguerita",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 342,
+    "proteinas": "11 g",
+    "carboidratos": "28 g",
+    "gorduras": "15 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Mussarela",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 360,
+    "proteinas": "12 g",
+    "carboidratos": "29 g",
+    "gorduras": "17 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Mussarela com bacon",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 463,
+    "proteinas": "14 g",
+    "carboidratos": "30 g",
+    "gorduras": "25 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Mussarela de búfala, tomate seco e rúcula",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 280,
+    "proteinas": "10 g",
+    "carboidratos": "24 g",
+    "gorduras": "12 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Palmito com mussarela",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 274,
+    "proteinas": "10 g",
+    "carboidratos": "23 g",
+    "gorduras": "11 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Peito de peru com catupiry",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 271,
+    "proteinas": "13 g",
+    "carboidratos": "22 g",
+    "gorduras": "11 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza Portuguesa",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 316,
+    "proteinas": "13 g",
+    "carboidratos": "25 g",
+    "gorduras": "13 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza Quatro queijos",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 382,
+    "proteinas": "14 g",
+    "carboidratos": "28 g",
+    "gorduras": "20 g",
+    "icone": "🍕"
+  },
+  {
+    "nome": "Pizza de Salmão defumado, mussarela e tomate",
+    "porcao": "1 fatia (120 g)",
+    "calorias": 318,
+    "proteinas": "17 g",
+    "carboidratos": "25 g",
+    "gorduras": "13 g",
+    "icone": "🍕"
+  },
+
+  {
+    "nome": "Canelone de ricota com molho branco",
+    "porcao": "1 unidade",
+    "peso": "30 g",
+    "calorias": 127,
+    "proteinas": "3.2 g",
+    "carboidratos": "20.6 g",
+    "gorduras": "3.5 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Capelete de carne com molho de tomate",
+    "porcao": "1 col. de servir",
+    "peso": "45 g",
+    "calorias": 141,
+    "proteinas": "3.5 g",
+    "carboidratos": "22.9 g",
+    "gorduras": "3.9 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Macarrão alho e óleo",
+    "porcao": "1 prato fundo",
+    "peso": "200 g",
+    "calorias": 438,
+    "proteinas": "11.0 g",
+    "carboidratos": "71.2 g",
+    "gorduras": "12.2 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Panqueca de carne",
+    "porcao": "1 unidade média",
+    "peso": "80 g",
+    "calorias": 229,
+    "proteinas": "5.7 g",
+    "carboidratos": "37.2 g",
+    "gorduras": "6.4 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Torta de frango com catupiry",
+    "porcao": "1 fatia",
+    "peso": "125 g",
+    "calorias": 399,
+    "proteinas": "10.0 g",
+    "carboidratos": "64.8 g",
+    "gorduras": "11.1 g",
+    "icone": "🥧"
+  },
+  {
+    "nome": "Biscoito recheado de chocolate diet",
+    "porcao": "3 unidades",
+    "peso": "30 g",
+    "calorias": 120,
+    "proteinas": "1.8 g",
+    "carboidratos": "21.0 g",
+    "gorduras": "3.2 g",
+    "icone": "🍪"
+  },
+  {
+    "nome": "Cookie com gotas de chocolate",
+    "porcao": "2 unidades",
+    "peso": "30 g",
+    "calorias": 148,
+    "proteinas": "2.2 g",
+    "carboidratos": "25.9 g",
+    "gorduras": "3.9 g",
+    "icone": "🍪"
+  },
+  {
+    "nome": "Croissant de queijo",
+    "porcao": "1 unidade grande",
+    "peso": "80 g",
+    "calorias": 328,
+    "proteinas": "7.4 g",
+    "carboidratos": "57.4 g",
+    "gorduras": "7.7 g",
+    "icone": "🍞"
+  },
+  {
+    "nome": "Pão francês",
+    "porcao": "1 unidade",
+    "peso": "50 g",
+    "calorias": 135,
+    "proteinas": "3.0 g",
+    "carboidratos": "23.6 g",
+    "gorduras": "3.1 g",
+    "icone": "🍞"
+  },
+  {
+    "nome": "Torrada integral",
+    "porcao": "3 unidades",
+    "peso": "30 g",
+    "calorias": 116,
+    "proteinas": "2.6 g",
+    "carboidratos": "20.3 g",
+    "gorduras": "2.7 g",
+    "icone": "🍞"
+  },
+  {
+    "nome": "Bolo de laranja",
+    "porcao": "1 fatia média",
+    "peso": "80 g",
+    "calorias": 220,
+    "proteinas": "3.0 g",
+    "carboidratos": "36.0 g",
+    "gorduras": "8.0 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Bolo de cenoura",
+    "porcao": "1 fatia média",
+    "peso": "80 g",
+    "calorias": 230,
+    "proteinas": "3.2 g",
+    "carboidratos": "38.0 g",
+    "gorduras": "7.5 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Bolo de cenoura com cobertura de chocolate",
+    "porcao": "1 fatia média",
+    "peso": "80 g",
+    "calorias": 250,
+    "proteinas": "3.5 g",
+    "carboidratos": "40.0 g",
+    "gorduras": "9.0 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Bolo de chocolate com cobertura de brigadeiro",
+    "porcao": "1 fatia média",
+    "peso": "80 g",
+    "calorias": 320,
+    "proteinas": "4.0 g",
+    "carboidratos": "50.0 g",
+    "gorduras": "12.0 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Pão com ovo",
+    "porcao": "1 unidade (pão francês + 1 ovo)",
+    "peso": "100 g",
+    "calorias": 270,
+    "proteinas": "10 g",
+    "carboidratos": "28 g",
+    "gorduras": "12 g",
+    "icone": "🥪"
+  },
+  {
+    "nome": "Tapioca com queijo",
+    "porcao": "1 unidade média",
+    "peso": "120 g",
+    "calorias": 290,
+    "proteinas": "10 g",
+    "carboidratos": "35 g",
+    "gorduras": "12 g",
+    "icone": "🥙"
+  },
+  {
+    "nome": "Cuscuz com ovo",
+    "porcao": "1 prato pequeno",
+    "peso": "150 g",
+    "calorias": 250,
+    "proteinas": "8 g",
+    "carboidratos": "35 g",
+    "gorduras": "8 g",
+    "icone": "🍛"
+  },
+  {
+    "nome": "Pão de queijo",
+    "porcao": "1 unidade média",
+    "peso": "40 g",
+    "calorias": 150,
+    "proteinas": "3 g",
+    "carboidratos": "16 g",
+    "gorduras": "8 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Tapioca com ovo",
+    "porcao": "1 unidade média",
+    "peso": "130 g",
+    "calorias": 270,
+    "proteinas": "9 g",
+    "carboidratos": "30 g",
+    "gorduras": "11 g",
+    "icone": "🌮"
+  },
+  {
+    "nome": "Arroz com feijão",
+    "porcao": "1 prato médio",
+    "peso": "200 g",
+    "calorias": 300,
+    "proteinas": "9 g",
+    "carboidratos": "50 g",
+    "gorduras": "4 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Café com leite e açúcar",
+    "porcao": "1 xícara (200 ml)",
+    "peso": "200 g",
+    "calorias": 110,
+    "proteinas": "3 g",
+    "carboidratos": "12 g",
+    "gorduras": "5 g",
+    "icone": "☕"
+  },
+  {
+    "nome": "Mamão papaia",
+    "porcao": "1/2 unidade média",
+    "peso": "150 g",
+    "calorias": 60,
+    "proteinas": "0.6 g",
+    "carboidratos": "15 g",
+    "gorduras": "0.1 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Vitamina de banana com leite",
+    "porcao": "1 copo (300 ml)",
+    "peso": "300 g",
+    "calorias": 190,
+    "proteinas": "5 g",
+    "carboidratos": "30 g",
+    "gorduras": "4 g",
+    "icone": "🥤"
+  },
+  {
+    "nome": "Iogurte natural com granola",
+    "porcao": "1 pote (170 g)",
+    "peso": "170 g",
+    "calorias": 220,
+    "proteinas": "6 g",
+    "carboidratos": "30 g",
+    "gorduras": "7 g",
+    "icone": "🍶"
+  },
+   {
+    "nome": "Açaí (polpa sem açúcar)",
+    "porcao": "100 g",
+    "calorias": 58,
+    "proteinas": "0.8 g",
+    "carboidratos": "6.2 g",
+    "gorduras": "3.9 g",
+    "icone": "🟣"
+  },
+  {
+    "nome": "Pão de forma integral",
+    "porcao": "1 fatia (30 g)",
+    "calorias": 70,
+    "proteinas": "3 g",
+    "carboidratos": "12 g",
+    "gorduras": "1 g",
+    "icone": "🍞"
+  },
+  {
+    "nome": "Cuscuz paulista",
+    "porcao": "1 fatia (100 g)",
+    "calorias": 220,
+    "proteinas": "5 g",
+    "carboidratos": "30 g",
+    "gorduras": "8 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Farofa de bacon",
+    "porcao": "1 colher de servir (30 g)",
+    "calorias": 150,
+    "proteinas": "2 g",
+    "carboidratos": "15 g",
+    "gorduras": "9 g",
+    "icone": "🥓"
+  },
+  {
+    "nome": "Acarajé",
+    "porcao": "1 unidade (150 g)",
+    "calorias": 350,
+    "proteinas": "8 g",
+    "carboidratos": "40 g",
+    "gorduras": "18 g",
+    "icone": "🧆"
+  },
+  {
+    "nome": "Feijoada",
+    "porcao": "1 prato (300 g)",
+    "calorias": 450,
+    "proteinas": "25 g",
+    "carboidratos": "35 g",
+    "gorduras": "22 g",
+    "icone": "🍲"
+  },
+  {
+    "nome": "Moqueca de peixe",
+    "porcao": "1 posta (200 g)",
+    "calorias": 280,
+    "proteinas": "30 g",
+    "carboidratos": "5 g",
+    "gorduras": "15 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Coxinha de frango",
+    "porcao": "1 unidade média (100 g)",
+    "calorias": 290,
+    "proteinas": "10 g",
+    "carboidratos": "30 g",
+    "gorduras": "15 g",
+    "icone": "🍗"
+  },
+  {
+    "nome": "Pastel de carne",
+    "porcao": "1 unidade (80 g)",
+    "calorias": 250,
+    "proteinas": "8 g",
+    "carboidratos": "25 g",
+    "gorduras": "12 g",
+    "icone": "🥟"
+  },
+  {
+    "nome": "Pudim de leite",
+    "porcao": "1 fatia (100 g)",
+    "calorias": 200,
+    "proteinas": "5 g",
+    "carboidratos": "35 g",
+    "gorduras": "5 g",
+    "icone": "🍮"
+  },
+  {
+    "nome": "Brigadeiro",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 90,
+    "proteinas": "1 g",
+    "carboidratos": "12 g",
+    "gorduras": "5 g",
+    "icone": "🍫"
+  },
+  {
+    "nome": "Beijinho",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 85,
+    "proteinas": "1 g",
+    "carboidratos": "10 g",
+    "gorduras": "5 g",
+    "icone": "🥥"
+  },
+  {
+    "nome": "Pamonha",
+    "porcao": "1 unidade (150 g)",
+    "calorias": 220,
+    "proteinas": "5 g",
+    "carboidratos": "35 g",
+    "gorduras": "7 g",
+    "icone": "🌽"
+  },
+  {
+    "nome": "Curau",
+    "porcao": "1 copo (200 ml)",
+    "calorias": 180,
+    "proteinas": "5 g",
+    "carboidratos": "30 g",
+    "gorduras": "5 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Milho cozido",
+    "porcao": "1 espiga média (150 g)",
+    "calorias": 130,
+    "proteinas": "4 g",
+    "carboidratos": "28 g",
+    "gorduras": "2 g",
+    "icone": "🌽"
+  },
+  {
+    "nome": "Batata-doce assada",
+    "porcao": "100 g",
+    "calorias": 90,
+    "proteinas": "2 g",
+    "carboidratos": "20 g",
+    "gorduras": "0.2 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Mandioca cozida",
+    "porcao": "100 g",
+    "calorias": 150,
+    "proteinas": "1 g",
+    "carboidratos": "38 g",
+    "gorduras": "0.3 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Salada de repolho",
+    "porcao": "1 prato (100 g)",
+    "calorias": 30,
+    "proteinas": "1 g",
+    "carboidratos": "7 g",
+    "gorduras": "0.2 g",
+    "icone": "🥗"
+  },
+  {
+    "nome": "Tomate",
+    "porcao": "1 unidade média (100 g)",
+    "calorias": 18,
+    "proteinas": "0.9 g",
+    "carboidratos": "3.9 g",
+    "gorduras": "0.2 g",
+    "icone": "🍅"
+  },
+  {
+    "nome": "Cenoura crua",
+    "porcao": "1 unidade média (80 g)",
+    "calorias": 33,
+    "proteinas": "0.8 g",
+    "carboidratos": "7.7 g",
+    "gorduras": "0.2 g",
+    "icone": "🥕"
+  },
+  {
+    "nome": "Alface",
+    "porcao": "2 folhas (30 g)",
+    "calorias": 5,
+    "proteinas": "0.5 g",
+    "carboidratos": "1 g",
+    "gorduras": "0.1 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Couve refogada",
+    "porcao": "1 colher de servir (50 g)",
+    "calorias": 40,
+    "proteinas": "2 g",
+    "carboidratos": "5 g",
+    "gorduras": "2 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Suco de laranja natural",
+    "porcao": "1 copo (200 ml)",
+    "calorias": 110,
+    "proteinas": "2 g",
+    "carboidratos": "25 g",
+    "gorduras": "0.5 g",
+    "icone": "🍊"
+  },
+  {
+    "nome": "Suco de maracujá natural",
+    "porcao": "1 copo (200 ml)",
+    "calorias": 90,
+    "proteinas": "1 g",
+    "carboidratos": "22 g",
+    "gorduras": "0.5 g",
+    "icone": "🍹"
+  },
+  {
+    "nome": "Refrigerante de cola",
+    "porcao": "1 lata (350 ml)",
+    "calorias": 148,
+    "proteinas": "0 g",
+    "carboidratos": "37 g",
+    "gorduras": "0 g",
+    "icone": "🥤"
+  },
+  {
+    "nome": "Água de coco natural",
+    "porcao": "1 copo (200 ml)",
+    "calorias": 40,
+    "proteinas": "1 g",
+    "carboidratos": "9 g",
+    "gorduras": "0.2 g",
+    "icone": "🥥"
+  },
+  {
+    "nome": "Café preto",
+    "porcao": "1 xícara (50 ml)",
+    "calorias": 2,
+    "proteinas": "0.3 g",
+    "carboidratos": "0.2 g",
+    "gorduras": "0 g",
+    "icone": "☕"
+  },
+  {
+    "nome": "Chá mate",
+    "porcao": "1 xícara (200 ml)",
+    "calorias": 5,
+    "proteinas": "0 g",
+    "carboidratos": "1 g",
+    "gorduras": "0 g",
+    "icone": "🍵"
+  },
+  {
+    "nome": "Cerveja",
+    "porcao": "1 lata (350 ml)",
+    "calorias": 150,
+    "proteinas": "1 g",
+    "carboidratos": "13 g",
+    "gorduras": "0 g",
+    "icone": "🍺"
+  },
+  {
+    "nome": "Caipirinha",
+    "porcao": "1 taça (150 ml)",
+    "calorias": 200,
+    "proteinas": "0 g",
+    "carboidratos": "20 g",
+    "gorduras": "0 g",
+    "icone": "🍸"
+  },
+  {
+    "nome": "Leite condensado",
+    "porcao": "1 colher de sopa (20 g)",
+    "calorias": 70,
+    "proteinas": "2 g",
+    "carboidratos": "12 g",
+    "gorduras": "2 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Queijo coalho",
+    "porcao": "1 espeto (50 g)",
+    "calorias": 150,
+    "proteinas": "10 g",
+    "carboidratos": "1 g",
+    "gorduras": "12 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Queijo minas frescal",
+    "porcao": "1 fatia (30 g)",
+    "calorias": 70,
+    "proteinas": "6 g",
+    "carboidratos": "1 g",
+    "gorduras": "5 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Requeijão",
+    "porcao": "1 colher de sopa (20 g)",
+    "calorias": 50,
+    "proteinas": "3 g",
+    "carboidratos": "1 g",
+    "gorduras": "4 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Peixe frito",
+    "porcao": "1 posta média (100 g)",
+    "calorias": 200,
+    "proteinas": "25 g",
+    "carboidratos": "0 g",
+    "gorduras": "12 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Camarão cozido",
+    "porcao": "100 g",
+    "calorias": 99,
+    "proteinas": "24 g",
+    "carboidratos": "0 g",
+    "gorduras": "1 g",
+    "icone": "🦐"
+  },
+  {
+    "nome": "Linguiça toscana",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 180,
+    "proteinas": "8 g",
+    "carboidratos": "1 g",
+    "gorduras": "16 g",
+    "icone": "🌭"
+  },
+  {
+    "nome": "Salsicha",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 150,
+    "proteinas": "6 g",
+    "carboidratos": "2 g",
+    "gorduras": "13 g",
+    "icone": "🌭"
+  },
+  {
+    "nome": "Hambúrguer bovino",
+    "porcao": "1 unidade (100 g)",
+    "calorias": 250,
+    "proteinas": "20 g",
+    "carboidratos": "0 g",
+    "gorduras": "18 g",
+    "icone": "🍔"
+  },
+  {
+    "nome": "Sanduíche natural de frango",
+    "porcao": "1 unidade (200 g)",
+    "calorias": 350,
+    "proteinas": "20 g",
+    "carboidratos": "30 g",
+    "gorduras": "15 g",
+    "icone": "🥪"
+  },
+  {
+    "nome": "Torta de legumes",
+    "porcao": "1 fatia (100 g)",
+    "calorias": 180,
+    "proteinas": "6 g",
+    "carboidratos": "20 g",
+    "gorduras": "9 g",
+    "icone": "🥧"
+  },
+  {
+    "nome": "Esfiha de carne",
+    "porcao": "1 unidade (60 g)",
+    "calorias": 150,
+    "proteinas": "6 g",
+    "carboidratos": "15 g",
+    "gorduras": "7 g",
+    "icone": "🥙"
+  },
+  {
+    "nome": "Quibe frito",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 120,
+    "proteinas": "5 g",
+    "carboidratos": "10 g",
+    "gorduras": "7 g",
+    "icone": "🧆"
+  },
+  {
+    "nome": "Salpicão de frango",
+    "porcao": "1 colher de servir (100 g)",
+    "calorias": 200,
+    "proteinas": "10 g",
+    "carboidratos": "15 g",
+    "gorduras": "12 g",
+    "icone": "🥗"
+  },
+  {
+    "nome": "Pipoca",
+    "porcao": "1 xícara (20 g)",
+    "calorias": 90,
+    "proteinas": "3 g",
+    "carboidratos": "15 g",
+    "gorduras": "3 g",
+    "icone": "🍿"
+  },
+  {
+    "nome": "Amendoim torrado",
+    "porcao": "1 punhado (30 g)",
+    "calorias": 180,
+    "proteinas": "7 g",
+    "carboidratos": "5 g",
+    "gorduras": "15 g",
+    "icone": "🥜"
+  },
+  {
+    "nome": "Castanha de caju",
+    "porcao": "1 punhado (30 g)",
+    "calorias": 170,
+    "proteinas": "5 g",
+    "carboidratos": "9 g",
+    "gorduras": "14 g",
+    "icone": "🌰"
+  },
+  {
+    "nome": "Barrinha de cereal",
+    "porcao": "1 unidade (25 g)",
+    "calorias": 100,
+    "proteinas": "2 g",
+    "carboidratos": "18 g",
+    "gorduras": "3 g",
+    "icone": "🍫"
+  },
+  {
+    "nome": "Melancia",
+    "porcao": "1 fatia (200 g)",
+    "calorias": 60,
+    "proteinas": "1 g",
+    "carboidratos": "15 g",
+    "gorduras": "0.2 g",
+    "icone": "🍉"
+  },
+  {
+    "nome": "Melão",
+    "porcao": "1 fatia (100 g)",
+    "calorias": 34,
+    "proteinas": "0.8 g",
+    "carboidratos": "8 g",
+    "gorduras": "0.2 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Kiwi",
+    "porcao": "1 unidade (70 g)",
+    "calorias": 42,
+    "proteinas": "0.8 g",
+    "carboidratos": "10 g",
+    "gorduras": "0.4 g",
+    "icone": "🥝"
+  },
+  {
+    "nome": "Manga",
+    "porcao": "1/2 unidade (100 g)",
+    "calorias": 60,
+    "proteinas": "0.8 g",
+    "carboidratos": "15 g",
+    "gorduras": "0.4 g",
+    "icone": "🥭"
+  },
+  {
+    "nome": "Abacate",
+    "porcao": "1/2 unidade (100 g)",
+    "calorias": 160,
+    "proteinas": "2 g",
+    "carboidratos": "8 g",
+    "gorduras": "15 g",
+    "icone": "🥑"
+  },
+  {
+    "nome": "Abóbora cabotiá cozida",
+    "porcao": "100 g",
+    "calorias": 48,
+    "proteinas": "1 g",
+    "carboidratos": "12 g",
+    "gorduras": "0.1 g",
+    "icone": "🎃"
+  },
+  {
+    "nome": "Beterraba crua",
+    "porcao": "100 g",
+    "calorias": 43,
+    "proteinas": "1.6 g",
+    "carboidratos": "10 g",
+    "gorduras": "0.2 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Chuchu cozido",
+    "porcao": "100 g",
+    "calorias": 19,
+    "proteinas": "0.8 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.1 g",
+    "icone": "🥒"
+  },
+  {
+    "nome": "Espinafre cru",
+    "porcao": "100 g",
+    "calorias": 23,
+    "proteinas": "2.9 g",
+    "carboidratos": "3.6 g",
+    "gorduras": "0.4 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Rúcula",
+    "porcao": "100 g",
+    "calorias": 25,
+    "proteinas": "2.6 g",
+    "carboidratos": "3.7 g",
+    "gorduras": "0.7 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Agrião",
+    "porcao": "100 g",
+    "calorias": 19,
+    "proteinas": "2.3 g",
+    "carboidratos": "3 g",
+    "gorduras": "0.1 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Berinjela cozida",
+    "porcao": "100 g",
+    "calorias": 35,
+    "proteinas": "0.8 g",
+    "carboidratos": "8 g",
+    "gorduras": "0.2 g",
+    "icone": "🍆"
+  },
+  {
+    "nome": "Pepino",
+    "porcao": "100 g",
+    "calorias": 16,
+    "proteinas": "0.7 g",
+    "carboidratos": "3.6 g",
+    "gorduras": "0.1 g",
+    "icone": "🥒"
+  },
+  {
+    "nome": "Abobrinha cozida",
+    "porcao": "100 g",
+    "calorias": 17,
+    "proteinas": "1.1 g",
+    "carboidratos": "3.3 g",
+    "gorduras": "0.3 g",
+    "icone": "🥒"
+  },
+  {
+    "nome": "Aspargos cozidos",
+    "porcao": "100 g",
+    "calorias": 22,
+    "proteinas": "2.4 g",
+    "carboidratos": "4.1 g",
+    "gorduras": "0.2 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Cogumelo shiitake",
+    "porcao": "100 g",
+    "calorias": 34,
+    "proteinas": "2.2 g",
+    "carboidratos": "6.8 g",
+    "gorduras": "0.5 g",
+    "icone": "🍄"
+  },
+  {
+    "nome": "Grão-de-bico cozido",
+    "porcao": "100 g",
+    "calorias": 164,
+    "proteinas": "8.9 g",
+    "carboidratos": "27 g",
+    "gorduras": "2.6 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Lentilha cozida",
+    "porcao": "100 g",
+    "calorias": 116,
+    "proteinas": "9 g",
+    "carboidratos": "20 g",
+    "gorduras": "0.4 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Quinoa cozida",
+    "porcao": "100 g",
+    "calorias": 120,
+    "proteinas": "4.4 g",
+    "carboidratos": "21 g",
+    "gorduras": "1.9 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Aveia em flocos",
+    "porcao": "30 g",
+    "calorias": 117,
+    "proteinas": "5 g",
+    "carboidratos": "20 g",
+    "gorduras": "2.4 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Semente de chia",
+    "porcao": "10 g",
+    "calorias": 49,
+    "proteinas": "1.7 g",
+    "carboidratos": "4.2 g",
+    "gorduras": "3.1 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Linhaça dourada",
+    "porcao": "10 g",
+    "calorias": 53,
+    "proteinas": "1.8 g",
+    "carboidratos": "2.9 g",
+    "gorduras": "4.3 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Amêndoas",
+    "porcao": "30 g",
+    "calorias": 170,
+    "proteinas": "6 g",
+    "carboidratos": "6 g",
+    "gorduras": "15 g",
+    "icone": "🌰"
+  },
+  {
+    "nome": "Nozes",
+    "porcao": "30 g",
+    "calorias": 185,
+    "proteinas": "4.3 g",
+    "carboidratos": "4 g",
+    "gorduras": "18 g",
+    "icone": "🌰"
+  },
+  {
+    "nome": "Castanha-do-pará",
+    "porcao": "30 g",
+    "calorias": 187,
+    "proteinas": "4.2 g",
+    "carboidratos": "3.5 g",
+    "gorduras": "19 g",
+    "icone": "🌰"
+  },
+  {
+    "nome": "Peito de peru grelhado",
+    "porcao": "100 g",
+    "calorias": 135,
+    "proteinas": "29 g",
+    "carboidratos": "0 g",
+    "gorduras": "1.5 g",
+    "icone": "🦃"
+  },
+  {
+    "nome": "Salmão grelhado",
+    "porcao": "100 g",
+    "calorias": 208,
+    "proteinas": "20 g",
+    "carboidratos": "0 g",
+    "gorduras": "13 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Atum fresco grelhado",
+    "porcao": "100 g",
+    "calorias": 144,
+    "proteinas": "23 g",
+    "carboidratos": "0 g",
+    "gorduras": "5 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Sardinha assada",
+    "porcao": "100 g",
+    "calorias": 208,
+    "proteinas": "25 g",
+    "carboidratos": "0 g",
+    "gorduras": "11 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Omelete de claras",
+    "porcao": "2 ovos (100 g)",
+    "calorias": 120,
+    "proteinas": "13 g",
+    "carboidratos": "1 g",
+    "gorduras": "7 g",
+    "icone": "🍳"
+  },
+  {
+    "nome": "Tofu",
+    "porcao": "100 g",
+    "calorias": 76,
+    "proteinas": "8 g",
+    "carboidratos": "2 g",
+    "gorduras": "4.8 g",
+    "icone": "🥢"
+  },
+  {
+    "nome": "Iogurte natural desnatado",
+    "porcao": "1 pote (170 g)",
+    "calorias": 90,
+    "proteinas": "9 g",
+    "carboidratos": "6 g",
+    "gorduras": "0.5 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Leite desnatado",
+    "porcao": "200 ml",
+    "calorias": 80,
+    "proteinas": "6 g",
+    "carboidratos": "12 g",
+    "gorduras": "0.3 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Queijo cottage",
+    "porcao": "100 g",
+    "calorias": 98,
+    "proteinas": "11 g",
+    "carboidratos": "3 g",
+    "gorduras": "4.3 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Ricota",
+    "porcao": "100 g",
+    "calorias": 140,
+    "proteinas": "11 g",
+    "carboidratos": "3 g",
+    "gorduras": "8 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Whey protein",
+    "porcao": "30 g (1 scoop)",
+    "calorias": 120,
+    "proteinas": "24 g",
+    "carboidratos": "3 g",
+    "gorduras": "1 g",
+    "icone": "🥤"
+  },
+  {
+    "nome": "Água de coco natural",
+    "porcao": "200 ml",
+    "calorias": 40,
+    "proteinas": "1 g",
+    "carboidratos": "9 g",
+    "gorduras": "0 g",
+    "icone": "🥥"
+  },
+  {
+    "nome": "Chá verde",
+    "porcao": "200 ml",
+    "calorias": 2,
+    "proteinas": "0 g",
+    "carboidratos": "0.5 g",
+    "gorduras": "0 g",
+    "icone": "🍵"
+  },
+  {
+    "nome": "Suco verde (couve + maçã + gengibre)",
+    "porcao": "200 ml",
+    "calorias": 80,
+    "proteinas": "2 g",
+    "carboidratos": "18 g",
+    "gorduras": "0.5 g",
+    "icone": "🥤"
+  },
+  {
+    "nome": "Azeite de oliva extravirgem",
+    "porcao": "10 ml (1 colher de sopa)",
+    "calorias": 90,
+    "proteinas": "0 g",
+    "carboidratos": "0 g",
+    "gorduras": "10 g",
+    "icone": "🫒"
+  },
+  {
+    "nome": "Vinagre de maçã",
+    "porcao": "10 ml",
+    "calorias": 3,
+    "proteinas": "0 g",
+    "carboidratos": "0.1 g",
+    "gorduras": "0 g",
+    "icone": "🍶"
+  },
+  {
+    "nome": "Mel orgânico",
+    "porcao": "10 g",
+    "calorias": 30,
+    "proteinas": "0.1 g",
+    "carboidratos": "8 g",
+    "gorduras": "0 g",
+    "icone": "🍯"
+  },
+  {
+    "nome": "Gengibre",
+    "porcao": "10 g",
+    "calorias": 8,
+    "proteinas": "0.2 g",
+    "carboidratos": "1.8 g",
+    "gorduras": "0.1 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Canela em pó",
+    "porcao": "5 g",
+    "calorias": 6,
+    "proteinas": "0.1 g",
+    "carboidratos": "2 g",
+    "gorduras": "0 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Cúrcuma (açafrão-da-terra)",
+    "porcao": "5 g",
+    "calorias": 16,
+    "proteinas": "0.5 g",
+    "carboidratos": "3 g",
+    "gorduras": "0.2 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Filé de tilápia grelhado",
+    "porcao": "100 g",
+    "calorias": 128,
+    "proteinas": "26 g",
+    "carboidratos": "0 g",
+    "gorduras": "2.7 g",
+    "icone": "🐟"
+  },
+  {
+    "nome": "Carne de sol",
+    "porcao": "100 g",
+    "calorias": 194,
+    "proteinas": "29 g",
+    "carboidratos": "0 g",
+    "gorduras": "8.5 g",
+    "icone": "🥩"
+  },
+  {
+    "nome": "Fígado bovino grelhado",
+    "porcao": "100 g",
+    "calorias": 175,
+    "proteinas": "29 g",
+    "carboidratos": "3.9 g",
+    "gorduras": "5.3 g",
+    "icone": "🍖"
+  },
+  {
+    "nome": "Coração de frango grelhado",
+    "porcao": "100 g",
+    "calorias": 185,
+    "proteinas": "26 g",
+    "carboidratos": "0.1 g",
+    "gorduras": "8.5 g",
+    "icone": "🍗"
+  },
+  {
+    "nome": "Peito de pato grelhado",
+    "porcao": "100 g",
+    "calorias": 202,
+    "proteinas": "23 g",
+    "carboidratos": "0 g",
+    "gorduras": "12 g",
+    "icone": "🦆"
+  },
+  {
+    "nome": "Lagarto bovino cozido",
+    "porcao": "100 g",
+    "calorias": 228,
+    "proteinas": "30 g",
+    "carboidratos": "0 g",
+    "gorduras": "11 g",
+    "icone": "🥩"
+  },
+  {
+    "nome": "Pernil de porco assado (sem gordura)",
+    "porcao": "100 g",
+    "calorias": 195,
+    "proteinas": "28 g",
+    "carboidratos": "0 g",
+    "gorduras": "9 g",
+    "icone": "🍖"
+  },
+  {
+    "nome": "Carne de jaca verde (vegetariana)",
+    "porcao": "100 g",
+    "calorias": 95,
+    "proteinas": "4 g",
+    "carboidratos": "22 g",
+    "gorduras": "1 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Proteína de soja texturizada",
+    "porcao": "100 g (seca)",
+    "calorias": 330,
+    "proteinas": "50 g",
+    "carboidratos": "30 g",
+    "gorduras": "1 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Seitan (glúten de trigo)",
+    "porcao": "100 g",
+    "calorias": 370,
+    "proteinas": "75 g",
+    "carboidratos": "14 g",
+    "gorduras": "1 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Camarão seco",
+    "porcao": "100 g",
+    "calorias": 253,
+    "proteinas": "50 g",
+    "carboidratos": "2 g",
+    "gorduras": "3 g",
+    "icone": "🦐"
+  },
+  {
+    "nome": "Siri cozido",
+    "porcao": "100 g",
+    "calorias": 97,
+    "proteinas": "20 g",
+    "carboidratos": "0 g",
+    "gorduras": "1 g",
+    "icone": "🦀"
+  },
+  {
+    "nome": "Ostra fresca",
+    "porcao": "100 g",
+    "calorias": 81,
+    "proteinas": "9 g",
+    "carboidratos": "4 g",
+    "gorduras": "2 g",
+    "icone": "🦪"
+  },
+  {
+    "nome": "Polvo cozido",
+    "porcao": "100 g",
+    "calorias": 164,
+    "proteinas": "30 g",
+    "carboidratos": "4 g",
+    "gorduras": "2 g",
+    "icone": "🐙"
+  },
+  {
+    "nome": "Lula grelhada",
+    "porcao": "100 g",
+    "calorias": 175,
+    "proteinas": "32 g",
+    "carboidratos": "7 g",
+    "gorduras": "2 g",
+    "icone": "🦑"
+  },
+  {
+    "nome": "Patuá (molusco típico do Nordeste)",
+    "porcao": "100 g",
+    "calorias": 86,
+    "proteinas": "16 g",
+    "carboidratos": "2 g",
+    "gorduras": "1 g",
+    "icone": "🐚"
+  },
+  {
+    "nome": "Caranguejo cozido",
+    "porcao": "100 g",
+    "calorias": 97,
+    "proteinas": "19 g",
+    "carboidratos": "0 g",
+    "gorduras": "1.5 g",
+    "icone": "🦀"
+  },
+  {
+    "nome": "Ovo de codorna",
+    "porcao": "5 unidades (50 g)",
+    "calorias": 79,
+    "proteinas": "6 g",
+    "carboidratos": "0.4 g",
+    "gorduras": "5.5 g",
+    "icone": "🥚"
+  },
+  {
+    "nome": "Clara de ovo pasteurizada",
+    "porcao": "100 g",
+    "calorias": 52,
+    "proteinas": "11 g",
+    "carboidratos": "0.7 g",
+    "gorduras": "0.2 g",
+    "icone": "🍳"
+  },
+  {
+    "nome": "Queijo minas padrão",
+    "porcao": "100 g",
+    "calorias": 320,
+    "proteinas": "21 g",
+    "carboidratos": "3 g",
+    "gorduras": "25 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Queijo prato",
+    "porcao": "100 g",
+    "calorias": 360,
+    "proteinas": "22 g",
+    "carboidratos": "2 g",
+    "gorduras": "30 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Queijo gorgonzola",
+    "porcao": "100 g",
+    "calorias": 353,
+    "proteinas": "21 g",
+    "carboidratos": "2 g",
+    "gorduras": "29 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Leite em pó desnatado",
+    "porcao": "30 g",
+    "calorias": 110,
+    "proteinas": "11 g",
+    "carboidratos": "16 g",
+    "gorduras": "0.3 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Iogurte grego natural",
+    "porcao": "100 g",
+    "calorias": 97,
+    "proteinas": "9 g",
+    "carboidratos": "4 g",
+    "gorduras": "5 g",
+    "icone": "🥛"
+  },
+  {
+    "nome": "Kefir",
+    "porcao": "200 ml",
+    "calorias": 100,
+    "proteinas": "6 g",
+    "carboidratos": "10 g",
+    "gorduras": "3 g",
+    "icone": "🍶"
+  },
+  {
+    "nome": "Tempeh (fermentado de soja)",
+    "porcao": "100 g",
+    "calorias": 193,
+    "proteinas": "19 g",
+    "carboidratos": "9 g",
+    "gorduras": "11 g",
+    "icone": "🥢"
+  },
+  {
+    "nome": "Ervilha seca cozida",
+    "porcao": "100 g",
+    "calorias": 118,
+    "proteinas": "8 g",
+    "carboidratos": "21 g",
+    "gorduras": "0.4 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Edamame (soja verde)",
+    "porcao": "100 g",
+    "calorias": 122,
+    "proteinas": "11 g",
+    "carboidratos": "10 g",
+    "gorduras": "5 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Semente de abóbora",
+    "porcao": "30 g",
+    "calorias": 160,
+    "proteinas": "9 g",
+    "carboidratos": "3 g",
+    "gorduras": "14 g",
+    "icone": "🎃"
+  },
+  {
+    "nome": "Pasta de amendoim integral",
+    "porcao": "30 g",
+    "calorias": 180,
+    "proteinas": "7 g",
+    "carboidratos": "6 g",
+    "gorduras": "16 g",
+    "icone": "🥜"
+  },
+  {
+    "nome": "Macarrão integral cozido",
+    "porcao": "100 g",
+    "calorias": 124,
+    "proteinas": "5 g",
+    "carboidratos": "25 g",
+    "gorduras": "1 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Nhoque de batata",
+    "porcao": "100 g",
+    "calorias": 150,
+    "proteinas": "4 g",
+    "carboidratos": "32 g",
+    "gorduras": "1 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Cuscuz de milho",
+    "porcao": "100 g",
+    "calorias": 112,
+    "proteinas": "3 g",
+    "carboidratos": "25 g",
+    "gorduras": "0.5 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Polenta cozida",
+    "porcao": "100 g",
+    "calorias": 85,
+    "proteinas": "2 g",
+    "carboidratos": "20 g",
+    "gorduras": "0.3 g",
+    "icone": "🍲"
+  },
+  {
+    "nome": "Batata-baroa (mandioquinha) cozida",
+    "porcao": "100 g",
+    "calorias": 80,
+    "proteinas": "1 g",
+    "carboidratos": "18 g",
+    "gorduras": "0.3 g",
+    "icone": "🥔"
+  },
+  {
+    "nome": "Inhame cozido",
+    "porcao": "100 g",
+    "calorias": 118,
+    "proteinas": "2 g",
+    "carboidratos": "28 g",
+    "gorduras": "0.2 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Cará cozido",
+    "porcao": "100 g",
+    "calorias": 108,
+    "proteinas": "2 g",
+    "carboidratos": "26 g",
+    "gorduras": "0.1 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Purê de batata-doce",
+    "porcao": "100 g",
+    "calorias": 107,
+    "proteinas": "2 g",
+    "carboidratos": "25 g",
+    "gorduras": "0.3 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Pão de batata",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 135,
+    "proteinas": "4 g",
+    "carboidratos": "25 g",
+    "gorduras": "2 g",
+    "icone": "🍞"
+  },
+  {
+    "nome": "Pão de queijo light",
+    "porcao": "1 unidade (30 g)",
+    "calorias": 90,
+    "proteinas": "4 g",
+    "carboidratos": "15 g",
+    "gorduras": "2 g",
+    "icone": "🧀"
+  },
+  {
+    "nome": "Biscoito de polvilho",
+    "porcao": "30 g",
+    "calorias": 120,
+    "proteinas": "1 g",
+    "carboidratos": "25 g",
+    "gorduras": "2 g",
+    "icone": "🍘"
+  },
+  {
+    "nome": "Pão sírio integral",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 130,
+    "proteinas": "5 g",
+    "carboidratos": "25 g",
+    "gorduras": "1 g",
+    "icone": "🥙"
+  },
+  {
+    "nome": "Crepioca",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 100,
+    "proteinas": "4 g",
+    "carboidratos": "15 g",
+    "gorduras": "2 g",
+    "icone": "🥞"
+  },
+  {
+    "nome": "Baroa cozida",
+    "porcao": "100 g",
+    "calorias": 80,
+    "proteinas": "1 g",
+    "carboidratos": "18 g",
+    "gorduras": "0.3 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Farinha de mandioca",
+    "porcao": "30 g",
+    "calorias": 110,
+    "proteinas": "1 g",
+    "carboidratos": "25 g",
+    "gorduras": "0.5 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Farinha de milho flocada",
+    "porcao": "30 g",
+    "calorias": 108,
+    "proteinas": "2 g",
+    "carboidratos": "23 g",
+    "gorduras": "1 g",
+    "icone": "🌽"
+  },
+  {
+    "nome": "Canjica",
+    "porcao": "100 g",
+    "calorias": 120,
+    "proteinas": "3 g",
+    "carboidratos": "25 g",
+    "gorduras": "1 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Curau de milho",
+    "porcao": "100 g",
+    "calorias": 110,
+    "proteinas": "4 g",
+    "carboidratos": "20 g",
+    "gorduras": "2 g",
+    "icone": "🥣"
+  },
+  {
+    "nome": "Pamonha salgada",
+    "porcao": "100 g",
+    "calorias": 150,
+    "proteinas": "4 g",
+    "carboidratos": "30 g",
+    "gorduras": "2 g",
+    "icone": "🌽"
+  },
+  {
+    "nome": "Bolo de milho",
+    "porcao": "1 fatia (80 g)",
+    "calorias": 180,
+    "proteinas": "4 g",
+    "carboidratos": "35 g",
+    "gorduras": "3 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Bolo de fubá",
+    "porcao": "1 fatia (80 g)",
+    "calorias": 170,
+    "proteinas": "3 g",
+    "carboidratos": "32 g",
+    "gorduras": "3 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Biscoito de maisena",
+    "porcao": "30 g",
+    "calorias": 120,
+    "proteinas": "2 g",
+    "carboidratos": "22 g",
+    "gorduras": "3 g",
+    "icone": "🍘"
+  },
+  {
+    "nome": "Biscoito cream cracker integral",
+    "porcao": "30 g",
+    "calorias": 130,
+    "proteinas": "3 g",
+    "carboidratos": "20 g",
+    "gorduras": "4 g",
+    "icone": "🍘"
+  },
+  {
+    "nome": "Rosca doce",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 180,
+    "proteinas": "3 g",
+    "carboidratos": "35 g",
+    "gorduras": "3 g",
+    "icone": "🥨"
+  },
+  {
+    "nome": "Pão de mel",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 200,
+    "proteinas": "3 g",
+    "carboidratos": "40 g",
+    "gorduras": "4 g",
+    "icone": "🍯"
+  },
+  {
+    "nome": "Sonho",
+    "porcao": "1 unidade (60 g)",
+    "calorias": 220,
+    "proteinas": "4 g",
+    "carboidratos": "30 g",
+    "gorduras": "8 g",
+    "icone": "🍩"
+  },
+  {
+    "nome": "Bolo de rolo",
+    "porcao": "1 fatia (50 g)",
+    "calorias": 180,
+    "proteinas": "3 g",
+    "carboidratos": "35 g",
+    "gorduras": "4 g",
+    "icone": "🍰"
+  },
+  {
+    "nome": "Cuscuz doce",
+    "porcao": "100 g",
+    "calorias": 150,
+    "proteinas": "3 g",
+    "carboidratos": "35 g",
+    "gorduras": "1 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Arroz doce",
+    "porcao": "100 g",
+    "calorias": 160,
+    "proteinas": "3 g",
+    "carboidratos": "35 g",
+    "gorduras": "1 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Salada de agrião",
+    "porcao": "100 g",
+    "calorias": 25,
+    "proteinas": "2 g",
+    "carboidratos": "3 g",
+    "gorduras": "0.3 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Salada de rúcula com tomate seco",
+    "porcao": "100 g",
+    "calorias": 50,
+    "proteinas": "2 g",
+    "carboidratos": "5 g",
+    "gorduras": "3 g",
+    "icone": "🍅"
+  },
+  {
+    "nome": "Salada de pepino com iogurte",
+    "porcao": "100 g",
+    "calorias": 45,
+    "proteinas": "1 g",
+    "carboidratos": "6 g",
+    "gorduras": "1 g",
+    "icone": "🥒"
+  },
+  {
+    "nome": "Salada de grão-de-bico",
+    "porcao": "100 g",
+    "calorias": 120,
+    "proteinas": "6 g",
+    "carboidratos": "18 g",
+    "gorduras": "3 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Salada de lentilha",
+    "porcao": "100 g",
+    "calorias": 110,
+    "proteinas": "8 g",
+    "carboidratos": "17 g",
+    "gorduras": "0.5 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Salada de quinoa",
+    "porcao": "100 g",
+    "calorias": 130,
+    "proteinas": "4 g",
+    "carboidratos": "21 g",
+    "gorduras": "2 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Salada de tabule",
+    "porcao": "100 g",
+    "calorias": 90,
+    "proteinas": "3 g",
+    "carboidratos": "15 g",
+    "gorduras": "2 g",
+    "icone": "🥙"
+  },
+  {
+    "nome": "Salada de couve-flor",
+    "porcao": "100 g",
+    "calorias": 30,
+    "proteinas": "2 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.3 g",
+    "icone": "🥦"
+  },
+  {
+    "nome": "Salada de palmito",
+    "porcao": "100 g",
+    "calorias": 40,
+    "proteinas": "2 g",
+    "carboidratos": "6 g",
+    "gorduras": "1 g",
+    "icone": "🌴"
+  },
+  {
+    "nome": "Salada de aspargos",
+    "porcao": "100 g",
+    "calorias": 35,
+    "proteinas": "3 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.2 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Salada de nabo",
+    "porcao": "100 g",
+    "calorias": 28,
+    "proteinas": "1 g",
+    "carboidratos": "6 g",
+    "gorduras": "0.1 g",
+    "icone": "🥕"
+  },
+  {
+    "nome": "Salada de rabanete",
+    "porcao": "100 g",
+    "calorias": 20,
+    "proteinas": "1 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.1 g",
+    "icone": "🌶️"
+  },
+  {
+    "nome": "Salada de cogumelos",
+    "porcao": "100 g",
+    "calorias": 40,
+    "proteinas": "3 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.5 g",
+    "icone": "🍄"
+  },
+  {
+    "nome": "Salada de jicama",
+    "porcao": "100 g",
+    "calorias": 50,
+    "proteinas": "1 g",
+    "carboidratos": "12 g",
+    "gorduras": "0.1 g",
+    "icone": "🍠"
+  },
+  {
+    "nome": "Salada de broto de feijão",
+    "porcao": "100 g",
+    "calorias": 35,
+    "proteinas": "3 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.2 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Salada de alface roxa",
+    "porcao": "100 g",
+    "calorias": 15,
+    "proteinas": "1 g",
+    "carboidratos": "3 g",
+    "gorduras": "0.1 g",
+    "icone": "🍃"
+  },
+  {
+    "nome": "Salada de espinafre cru",
+    "porcao": "100 g",
+    "calorias": 25,
+    "proteinas": "3 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.4 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Salada de acelga",
+    "porcao": "100 g",
+    "calorias": 20,
+    "proteinas": "2 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.2 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Salada de radicchio",
+    "porcao": "100 g",
+    "calorias": 30,
+    "proteinas": "1 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.3 g",
+    "icone": "🍂"
+  },
+  {
+    "nome": "Salada de endívia",
+    "porcao": "100 g",
+    "calorias": 25,
+    "proteinas": "1 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.2 g",
+    "icone": "🥬"
+  },
+  {
+    "nome": "Salada de almeirão",
+    "porcao": "100 g",
+    "calorias": 20,
+    "proteinas": "1 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.1 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Salada de bertalha",
+    "porcao": "100 g",
+    "calorias": 22,
+    "proteinas": "2 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.2 g",
+    "icone": "🍃"
+  },
+  {
+    "nome": "Salada de mostarda",
+    "porcao": "100 g",
+    "calorias": 28,
+    "proteinas": "2 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.3 g",
+    "icone": "🌿"
+  },
+  {
+    "nome": "Salada de taioba",
+    "porcao": "100 g",
+    "calorias": 35,
+    "proteinas": "3 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.4 g",
+    "icone": "🍃"
+  },
+  {
+    "nome": "Salada de capuchinha",
+    "porcao": "100 g",
+    "calorias": 25,
+    "proteinas": "2 g",
+    "carboidratos": "4 g",
+    "gorduras": "0.3 g",
+    "icone": "🌼"
+  },
+  {
+    "nome": "Salada de dente-de-leão",
+    "porcao": "100 g",
+    "calorias": 30,
+    "proteinas": "2 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.4 g",
+    "icone": "🌼"
+  },
+  {
+    "nome": "Salada de serralha",
+    "porcao": "100 g",
+    "calorias": 28,
+    "proteinas": "2 g",
+    "carboidratos": "5 g",
+    "gorduras": "0.3 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Salada de ora-pro-nóbis",
+    "porcao": "100 g",
+    "calorias": 40,
+    "proteinas": "4 g",
+    "carboidratos": "6 g",
+    "gorduras": "0.5 g",
+    "icone": "🌿"
+  },
+   {
+    "nome": "Acerola",
+    "porcao": "10 unidades (50 g)",
+    "calorias": 16,
+    "proteinas": "0.2 g",
+    "carboidratos": "3.5 g",
+    "gorduras": "0.15 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Cajá",
+    "porcao": "1 unidade média (40 g)",
+    "calorias": 18,
+    "proteinas": "0.4 g",
+    "carboidratos": "4.4 g",
+    "gorduras": "0.08 g",
+    "icone": "🥭"
+  },
+  {
+    "nome": "Graviola",
+    "porcao": "1 fatia (80 g)",
+    "calorias": 53,
+    "proteinas": "0.8 g",
+    "carboidratos": "12.8 g",
+    "gorduras": "0.24 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Jabuticaba",
+    "porcao": "10 unidades (30 g)",
+    "calorias": 17,
+    "proteinas": "0.18 g",
+    "carboidratos": "4.5 g",
+    "gorduras": "0.06 g",
+    "icone": "🍇"
+  },
+  {
+    "nome": "Cupuaçu",
+    "porcao": "1 fruta média (200 g)",
+    "calorias": 144,
+    "proteinas": "2 g",
+    "carboidratos": "36 g",
+    "gorduras": "0.8 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Sapoti",
+    "porcao": "1 unidade (80 g)",
+    "calorias": 66,
+    "proteinas": "0.32 g",
+    "carboidratos": "16 g",
+    "gorduras": "0.32 g",
+    "icone": "🍐"
+  },
+  {
+    "nome": "Tamarindo",
+    "porcao": "1 unidade (10 g)",
+    "calorias": 24,
+    "proteinas": "0.28 g",
+    "carboidratos": "6.2 g",
+    "gorduras": "0.06 g",
+    "icone": "🌱"
+  },
+  {
+    "nome": "Umbu",
+    "porcao": "1 unidade (30 g)",
+    "calorias": 13,
+    "proteinas": "0.24 g",
+    "carboidratos": "3.3 g",
+    "gorduras": "0.09 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Pitanga",
+    "porcao": "5 unidades (50 g)",
+    "calorias": 24,
+    "proteinas": "0.4 g",
+    "carboidratos": "5.5 g",
+    "gorduras": "0.2 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Seriguela",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 15,
+    "proteinas": "0.2 g",
+    "carboidratos": "3.8 g",
+    "gorduras": "0.06 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Bacuri",
+    "porcao": "1/2 fruta (50 g)",
+    "calorias": 74,
+    "proteinas": "0.5 g",
+    "carboidratos": "18 g",
+    "gorduras": "0.25 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Buriti",
+    "porcao": "1 unidade (30 g)",
+    "calorias": 46,
+    "proteinas": "0.3 g",
+    "carboidratos": "10.8 g",
+    "gorduras": "0.3 g",
+    "icone": "🌴"
+  },
+  {
+    "nome": "Pequi",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 41,
+    "proteinas": "0.4 g",
+    "carboidratos": "2.4 g",
+    "gorduras": "3.6 g",
+    "icone": "🌰"
+  },
+  {
+    "nome": "Murici",
+    "porcao": "10 unidades (30 g)",
+    "calorias": 19,
+    "proteinas": "0.3 g",
+    "carboidratos": "4.5 g",
+    "gorduras": "0.15 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Jenipapo",
+    "porcao": "1/2 fruta (50 g)",
+    "calorias": 31,
+    "proteinas": "0.35 g",
+    "carboidratos": "7.5 g",
+    "gorduras": "0.1 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Araçá",
+    "porcao": "1 unidade (30 g)",
+    "calorias": 16,
+    "proteinas": "0.18 g",
+    "carboidratos": "3.9 g",
+    "gorduras": "0.09 g",
+    "icone": "🍐"
+  },
+  {
+    "nome": "Cajuí",
+    "porcao": "1 unidade (15 g)",
+    "calorias": 6,
+    "proteinas": "0.15 g",
+    "carboidratos": "1.5 g",
+    "gorduras": "0.03 g",
+    "icone": "🥭"
+  },
+  {
+    "nome": "Mangaba",
+    "porcao": "1 unidade (40 g)",
+    "calorias": 21,
+    "proteinas": "0.32 g",
+    "carboidratos": "5.2 g",
+    "gorduras": "0.08 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Bacaba",
+    "porcao": "1 fruta (30 g)",
+    "calorias": 55,
+    "proteinas": "0.6 g",
+    "carboidratos": "12.6 g",
+    "gorduras": "0.3 g",
+    "icone": "🌴"
+  },
+  {
+    "nome": "Taperebá",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 9,
+    "proteinas": "0.2 g",
+    "carboidratos": "2.2 g",
+    "gorduras": "0.04 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Camu-camu",
+    "porcao": "5 unidades (20 g)",
+    "calorias": 3,
+    "proteinas": "0.08 g",
+    "carboidratos": "0.8 g",
+    "gorduras": "0.04 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Guajiru",
+    "porcao": "1 unidade (15 g)",
+    "calorias": 7,
+    "proteinas": "0.11 g",
+    "carboidratos": "1.65 g",
+    "gorduras": "0.05 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Jambo",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 28,
+    "proteinas": "0.3 g",
+    "carboidratos": "7 g",
+    "gorduras": "0.1 g",
+    "icone": "🍎"
+  },
+  {
+    "nome": "Pitomba",
+    "porcao": "5 unidades (30 g)",
+    "calorias": 14,
+    "proteinas": "0.24 g",
+    "carboidratos": "3.6 g",
+    "gorduras": "0.09 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Uvaia",
+    "porcao": "1 unidade (20 g)",
+    "calorias": 9,
+    "proteinas": "0.14 g",
+    "carboidratos": "2.2 g",
+    "gorduras": "0.06 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Abiu",
+    "porcao": "1 unidade (100 g)",
+    "calorias": 95,
+    "proteinas": "1 g",
+    "carboidratos": "24 g",
+    "gorduras": "0.4 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Açaí (polpa sem açúcar)",
+    "porcao": "1 porção (50 g)",
+    "calorias": 29,
+    "proteinas": "0.4 g",
+    "carboidratos": "3 g",
+    "gorduras": "1.95 g",
+    "icone": "🟣"
+  },
+  {
+    "nome": "Cacau (fruta fresca)",
+    "porcao": "1 unidade (30 g)",
+    "calorias": 17,
+    "proteinas": "0.3 g",
+    "carboidratos": "3.9 g",
+    "gorduras": "0.15 g",
+    "icone": "🍫"
+  },
+  {
+    "nome": "Carambola",
+    "porcao": "1 unidade média (90 g)",
+    "calorias": 28,
+    "proteinas": "0.9 g",
+    "carboidratos": "6.3 g",
+    "gorduras": "0.27 g",
+    "icone": "⭐"
+  },
+  {
+    "nome": "Caqui",
+    "porcao": "1 unidade (170 g)",
+    "calorias": 119,
+    "proteinas": "1 g",
+    "carboidratos": "30.6 g",
+    "gorduras": "0.34 g",
+    "icone": "🍅"
+  },
+  {
+    "nome": "Figo",
+    "porcao": "1 unidade (50 g)",
+    "calorias": 37,
+    "proteinas": "0.4 g",
+    "carboidratos": "9.5 g",
+    "gorduras": "0.15 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Goiaba branca",
+    "porcao": "1 unidade (100 g)",
+    "calorias": 68,
+    "proteinas": "2 g",
+    "carboidratos": "14 g",
+    "gorduras": "0.6 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Jaca dura",
+    "porcao": "1 bagaço (30 g)",
+    "calorias": 29,
+    "proteinas": "0.5 g",
+    "carboidratos": "6.9 g",
+    "gorduras": "0.18 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Lichia",
+    "porcao": "5 unidades (50 g)",
+    "calorias": 33,
+    "proteinas": "0.4 g",
+    "carboidratos": "8 g",
+    "gorduras": "0.2 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Longan",
+    "porcao": "5 unidades (50 g)",
+    "calorias": 30,
+    "proteinas": "0.5 g",
+    "carboidratos": "7.5 g",
+    "gorduras": "0.05 g",
+    "icone": "🍈"
+  },
+  {
+    "nome": "Nectarina",
+    "porcao": "1 unidade (120 g)",
+    "calorias": 53,
+    "proteinas": "1.2 g",
+    "carboidratos": "13.2 g",
+    "gorduras": "0.36 g",
+    "icone": "🍑"
+  },
+  {
+    "nome": "Pêssego",
+    "porcao": "1 unidade (100 g)",
+    "calorias": 39,
+    "proteinas": "0.9 g",
+    "carboidratos": "10 g",
+    "gorduras": "0.3 g",
+    "icone": "🍑"
+  },
+  {
+    "nome": "Physalis",
+    "porcao": "10 unidades (20 g)",
+    "calorias": 11,
+    "proteinas": "0.4 g",
+    "carboidratos": "2.2 g",
+    "gorduras": "0.14 g",
+    "icone": "🍒"
+  },
+  {
+    "nome": "Romã",
+    "porcao": "1/2 unidade (80 g)",
+    "calorias": 66,
+    "proteinas": "1.4 g",
+    "carboidratos": "15.2 g",
+    "gorduras": "0.96 g",
+    "icone": "🍎"
+  },
+  {
+    "nome": "Tangerina ponkan",
+    "porcao": "1 unidade (80 g)",
+    "calorias": 42,
+    "proteinas": "0.6 g",
+    "carboidratos": "10.4 g",
+    "gorduras": "0.24 g",
+    "icone": "🍊"
+  },
+  {
+    "nome": "Arroz branco cozido",
+    "porcao": "100 g",
+    "calorias": 130,
+    "proteinas": "2.7 g",
+    "carboidratos": "28 g",
+    "gorduras": "0.3 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Arroz integral cozido",
+    "porcao": "100 g",
+    "calorias": 124,
+    "proteinas": "2.6 g",
+    "carboidratos": "26 g",
+    "gorduras": "1 g",
+    "icone": "🍚"
+  },
+  {
+    "nome": "Arroz parboilizado cozido",
+    "porcao": "100 g",
+    "calorias": 123,
+    "proteinas": "2.9 g",
+    "carboidratos": "26 g",
+    "gorduras": "0.4 g",
+    "icone": "🍛"
+  },
+  {
+    "nome": "Feijão carioca cozido",
+    "porcao": "100 g",
+    "calorias": 76,
+    "proteinas": "4.8 g",
+    "carboidratos": "13 g",
+    "gorduras": "0.5 g",
+    "icone": "🫘"
+  },
+  {
+    "nome": "Feijão preto cozido",
+    "porcao": "100 g",
+    "calorias": 77,
+    "proteinas": "4.5 g",
+    "carboidratos": "14 g",
+    "gorduras": "0.5 g",
+    "icone": "🫘"
+  },
+  {
+    "nome": "Feijão branco cozido",
+    "porcao": "100 g",
+    "calorias": 67,
+    "proteinas": "4.7 g",
+    "carboidratos": "12 g",
+    "gorduras": "0.3 g",
+    "icone": "🫘"
+  },
+  {
+    "nome": "Macarrão cozido (trigo)",
+    "porcao": "100 g",
+    "calorias": 131,
+    "proteinas": "4.5 g",
+    "carboidratos": "25 g",
+    "gorduras": "1 g",
+    "icone": "🍝"
+  },
+  {
+    "nome": "Macarrão integral cozido",
+    "porcao": "100 g",
+    "calorias": 124,
+    "proteinas": "5 g",
+    "carboidratos": "25 g",
+    "gorduras": "1 g",
+    "icone": "🌾"
+  },
+  {
+    "nome": "Macarrão sem glúten (milho/arroz)",
+    "porcao": "100 g",
+    "calorias": 138,
+    "proteinas": "2.5 g",
+    "carboidratos": "30 g",
+    "gorduras": "0.8 g",
+    "icone": "🌽"
+  }
+
+
+]

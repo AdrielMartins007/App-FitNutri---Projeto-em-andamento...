@@ -1,0 +1,113 @@
+{
+  "Treino Perna": [
+    {
+      "nome": "Agachamento Livre",
+      "imagem": "imagensTreino/agachamentoLivre.gif",
+      "som": "agachamento_livre.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Leg Press",
+      "imagem": "imagensTreino/legPress.gif",
+      "som": "leg_press.mp3",
+      "repeticoes": 10,
+      "tempo": 3
+    },
+    {
+      "nome": "Cadeira Extensora",
+      "imagem": "imagensTreino/cadeiraextensora.jpeg",
+      "som": "cadeira_extensora.mp3",
+      "repeticoes": 15,
+      "tempo": 2
+    },
+    {
+      "nome": "Cadeira Flexora",
+      "imagem": "imagensTreino/cadeiraflexora.jpeg",
+      "som": "cadeira_flexora.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Panturrilha em Pé",
+      "imagem": "imagensTreino/panturrilhaempe.gif",
+      "som": "panturrilha_em_pe.mp3",
+      "repeticoes": 20,
+      "tempo": 1
+    }
+  ],
+  "Treino Peito": [
+    {
+      "nome": "Supino Reto",
+      "imagem": "imagensTreino/supinoreto.jpeg",
+      "som": "supino_reto.mp3",
+      "repeticoes": 10,
+      "tempo": 3
+    },
+    {
+      "nome": "Supino Halteres",
+      "imagem": "imagensTreino/supinohalteres.jpeg",
+      "som": "desenvolvimento_halteres.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Abdominal",
+      "imagem": "imagensTreino/abdominal.jpeg",
+      "som": "abdominal.mp3",
+      "repeticoes": 20,
+      "tempo": 1
+    },
+    {
+      "nome": "Crucifixo",
+      "imagem": "imagensTreino/crucifixo.jpeg",
+      "som": "crucifixo.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Flexão de Braço",
+      "imagem": "imagensTreino/flexaodebraco.jpeg",
+      "som": "flexao_braco.mp3",
+      "repeticoes": 15,
+      "tempo": 2
+    }
+  ],
+  "Treino Costa": [
+    {
+      "nome": "Rosca Direta",
+      "imagem": "imagensTreino/roscadireta.jpeg",
+      "som": "rosca_direta.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Tríceps Testa",
+      "imagem": "imagensTreino/tricipestesta.jpeg",
+      "som": "remada_curvada.mp3",
+      "repeticoes": 10,
+      "tempo": 3
+    },
+    {
+      "nome": "Puxada Frontal",
+      "imagem": "imagensTreino/puxadafrontal.jpeg",
+      "som": "puxada_frontal.mp3",
+      "repeticoes": 12,
+      "tempo": 2
+    },
+    {
+      "nome": "Remada Unilateral",
+      "imagem": "imagensTreino/remadaunilateral.jpeg",
+      "som": "remada_unilateral.mp3",
+      "repeticoes": 10,
+      "tempo": 3
+    },
+    {
+      "nome": "Pulldown",
+      "imagem": "imagensTreino/pulldown.jpeg",
+      "som": "pulldown.mp3",
+      "repeticoes": 15,
+      "tempo": 2
+    }
+  ]
+}

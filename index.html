@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitNutri App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Phone frame styles */
+      .phone-frame {
+        width: 375px;
+        height: 760px;
+        background-color: #1a1a1a;
+        border-radius: 40px;
+        padding: 15px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .phone-screen {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .phone-notch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 30px;
+        background-color: #1a1a1a;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 100;
+      }
+
+      .app-container {
+        width: 100%;
+        height: calc(
+          100% - 65px
+        ); /* Altura total menos a altura da barra de navegação */
+        overflow-y: auto;
+        position: relative;
+        padding-bottom: 15px; /* Espaço para evitar que o conteúdo fique atrás da navegação */
+      }
+
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .app-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .app-container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+
+      #register-step2::-webkit-scrollbar {
+        display: none;
+      }
+
+      .progress-ring-circle {
+        transition: stroke-dashoffset 0.35s;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+      }
+      .menu-item.active {
+        color: #15803d;
+        border-bottom: 3px solid #15803d;
+      }
+      .screen {
+        display: none;
+      }
+      .screen.active {
+        display: block;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .water-drop {
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+      .achievement-badge {
+        transition: all 0.3s ease;
+      }
+      .achievement-badge:hover {
+        transform: scale(1.05);
+      }
+      .calendar-day {
+        transition: all 0.2s ease;
+      }
+      .calendar-day:hover {
+        transform: scale(1.1);
+      }
+      .stat-card {
+        transition: all 0.3s ease;
+      }
+      .stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      .meal-item:hover,
+      .workout-item:hover,
+      .recipe-item:hover {
+        background-color: #f1f5f9;
+        transition: all 0.3s ease;
+      }
+      .meal-tag {
+        transition: all 0.2s ease;
+      }
+      .meal-tag:hover {
+        transform: scale(1.05);
+      }
+      .slide-in {
+        animation: slideIn 0.3s ease forwards;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.3s ease forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .pulse {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .bottom-nav-item.active {
+        color: #15803d;
+      }
+      .bottom-nav-item.active i {
+        color: #15803d;
+      }
+      .bottom-nav-item {
+        transition: all 0.2s ease;
+      }
+      .bottom-nav-item:active {
+        transform: scale(0.95);
+      }
+      .page-transition {
+        animation: fadeIn 0.3s ease;
+      }
+      .exercise-item {
+        transition: all 0.2s ease;
+      }
+      .exercise-item:hover {
+        background-color: #f9fafb;
+      }
+      .workout-history-item {
+        transition: all 0.2s ease;
+      }
+      .workout-history-item:hover {
+        transform: translateY(-2px);
+      }
+      .post-card {
+        transition: all 0.3s ease;
+      }
+      .post-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      .like-button,
+      .comment-button,
+      .share-button {
+        transition: all 0.2s ease;
+      }
+      .like-button:hover,
+      .comment-button:hover,
+      .share-button:hover {
+        transform: scale(1.1);
+      }
+
+      /* Fixed bottom navigation that stays within phone frame */
+      .bottom-nav {
+        height: 65px;
+        padding: 8px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid #e5e7eb;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 100%;
+        z-index: 50;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Improved nav icons */
+      .nav-icon {
+        font-size: 22px;
+        margin-bottom: 3px;
+      }
+
+      .bottom-nav-item {
+        position: relative;
+      }
+
+      .bottom-nav-item.active::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #15803d;
+      }
+
+      #texto-login {
+        font-size: 50px;
+      }
+
+      .logo {
+        position: relative;
+        top: -30px;
+      }
+      .sugestoes-lista {
+        border: 1px solid #e5e7eb;
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      .sugestoes-lista > div {
+        transition: background-color 0.2s;
+      }
+
+      .sugestoes-lista > div:hover {
+        background-color: #f3f4f6;
+      }
+      .remover-alimento-btn {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 18px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(239, 68, 68, 0.1);
+  }
+
+  .remover-alimento-btn:hover {
+    background-color: rgba(239, 68, 68, 0.2);
+  }
+
+  [data-food-item] {
+    position: relative;
+    padding-left: 0;
+    transition: padding-left 0.2s ease;
+  }
+
+  .modo-edicao [data-food-item] {
+    padding-left: 32px;
+  }
+
+  .modo-edicao .remover-alimento-btn {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+  }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <!-- LOGIN SCREEN -->
+        <div
+          id="login-screen"
+          class="inset-0 bg-white flex flex-col justify-center items-center p-6 z-50"
+        >
+          <div class="caixa-logo">
+            <img class="logo" src="/logofitnutri.png" alt="FitNutri" />
+          </div>
+          <div class="w-full">
+            <div class="mb-3">
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="login-email"
+                class="w-full px-4 py-2 border rounded-lg"
+                placeholder="seu@email.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Senha</label
+              >
+              <input
+                type="password"
+                id="login-password"
+                class="w-full px-4 py-2 border rounded-lg"
+                placeholder="********"
+              />
+            </div>
+            <!-- Mensagem de erro login -->
+            <div
+              id="login-error"
+              class="w-full text-red-600 text-sm bg-red-100 border border-red-300 rounded-lg px-4 py-2 mb-4 hidden text-center"
+            ></div>
+
+            <button
+              id="login-button"
+              class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold"
+            >
+              Entrar
+            </button>
+            <p class="text-sm text-center mt-4 text-gray-600">
+              Não tem uma conta?
+              <button id="go-to-register" class="text-green-600 font-semibold">
+                Cadastrar
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <!-- REGISTER SCREEN - ETAPA 1 -->
+        <div
+          id="register-step1"
+          class="absolute inset-0 bg-white overflow-y-auto p-6 z-50 hidden"
+        >
+          <h2 class="text-2xl font-bold mb-4 text-center text-green-600">
+            Cadastro
+          </h2>
+          <form id="step1-form" class="space-y-4">
+            <input
+              type="text"
+              placeholder="Nome completo"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <input
+              type="number"
+              placeholder="Idade"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <input
+              type="number"
+              step="0.01"
+              placeholder="Altura (m)"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <input
+              type="number"
+              step="0.001"
+              placeholder="Peso (kg)"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <select class="w-full px-4 py-2 border rounded-lg" required>
+              <option value="">Gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+            <input
+              type="tel"
+              placeholder="Telefone"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              class="w-full px-4 py-2 border rounded-lg"
+              required
+            />
+            <button
+              type="submit"
+              class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold"
+            >
+              Próximo
+            </button>
+            <p class="text-sm text-center mt-2 text-gray-600">
+              Já tem conta?
+              <button id="back-to-login" class="text-green-600 font-semibold">
+                Voltar
+              </button>
+            </p>
+          </form>
+        </div>
+
+        <!-- REGISTER SCREEN - ETAPA 2 (final bonita com perguntas acima) -->
+        <div
+          id="register-step2"
+          class="absolute inset-0 bg-white overflow-y-auto p-6 z-50 hidden text-sm"
+        >
+          <h2 class="text-2xl font-bold mb-6 text-center text-green-600">
+            Hábitos e Saúde
+          </h2>
+
+          <form id="step2-form" class="space-y-6 text-gray-700">
+            <!-- ATIVIDADE FÍSICA -->
+            <div class="bg-gray-50 p-4 rounded-xl shadow-sm border">
+              <h3 class="font-semibold text-lg mb-4 text-gray-800">
+                Atividade Física
+              </h3>
+
+              <label class="block mb-2"
+                >Você pratica alguma atividade física?</label
+              >
+              <div class="flex gap-6 mb-4">
+                <label class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="atividade"
+                    class="accent-green-600"
+                  />
+                  Sim
+                </label>
+                <label class="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="atividade"
+                    class="accent-green-600"
+                  />
+                  Não
+                </label>
+              </div>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="block mb-1"
+                    >Qual atividade e por quanto tempo?</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-2 border rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="block mb-1">Quantas vezes por semana?</label>
+                  <input
+                    type="text"
+                    class="w-full px-4 py-2 border rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ROTINA -->
+            <div class="bg-gray-50 p-4 rounded-xl shadow-sm border">
+              <h3 class="font-semibold text-lg mb-4 text-gray-800">
+                Rotina Diária
+              </h3>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="block mb-1">Quantas refeições por dia?</label>
+                  <input
+                    type="number"
+                    class="w-full px-4 py-2 border rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="block mb-1"
+                    >Quantas horas costuma dormir por noite?</label
+                  >
+                  <input
+                    type="number"
+                    class="w-full px-4 py-2 border rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- CONDIÇÕES DE SAÚDE -->
+            <div class="bg-gray-50 p-4 rounded-xl shadow-sm border">
+              <h3 class="font-semibold text-lg mb-4 text-gray-800">
+                Condições de Saúde
+              </h3>
+              <p class="text-sm text-gray-600 mb-3">
+                Você tem ou teve recentemente alguma das condições abaixo?
+              </p>
+
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Doenças
+                  cardíacas</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Problemas
+                  respiratórios</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Tonturas</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Hipertensão</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Bronquite</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Asma</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Colesterol
+                  alto</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Glicose
+                  elevada</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Diabetes</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Convulsões</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Fraturas
+                  ósseas</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" />
+                  Cirurgias</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Cefaleia
+                  frequente</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Dores
+                  musculares</label
+                >
+                <label class="flex items-center gap-2"
+                  ><input type="checkbox" class="accent-green-600" /> Dores nas
+                  articulações</label
+                >
+              </div>
+            </div>
+
+            <!-- BOTÕES -->
+            <div class="space-y-3 pt-2">
+              <button
+                type="submit"
+                class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+              >
+                Concluir Cadastro
+              </button>
+              <button
+                type="button"
+                id="back-to-step1"
+                class="w-full text-green-700 font-medium border border-green-600 py-2 rounded-xl hover:bg-green-50 transition"
+              >
+                Voltar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="app-container hidden">
+          <!-- Home Screen -->
+          <div id="home-screen" class="screen active">
+            <!-- Header -->
+            <header
+              class="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 pt-8 pb-16 rounded-b-3xl shadow-lg"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <h1 class="text-2xl font-bold">FitNutri</h1>
+                  <p class="text-xl">
+                    Olá, <span class="user-nome">Usuário</span>!
+                  </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <button
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-green-600">🔔</span>
+                  </button>
+                  <button
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                  >
+                    <span>👤</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h2 class="text-xl font-semibold">FitNutri</h2>
+                <p class="text-green-100 text-sm">Seu assistente nutricional</p>
+              </div>
+            </header>
+
+            <main class="px-4 -mt-10">
+              <!-- Daily Summary Card -->
+              <div class="bg-white rounded-2xl shadow-md p-4 mb-6 slide-in">
+                <h3 class="text-lg font-semibold mb-3">Resumo Diário</h3>
+                <div class="flex justify-between items-center">
+                  <!-- Calories Circle -->
+                  <div class="flex flex-col items-center">
+                    <div class="relative w-20 h-20">
+                      <svg class="w-20 h-20" viewBox="0 0 100 100">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="45"
+                          fill="none"
+                          stroke="#e5e7eb"
+                          stroke-width="8"
+                        />
+                        <circle
+                          class="progress-ring-circle"
+                          cx="50"
+                          cy="50"
+                          r="45"
+                          fill="none"
+                          stroke="#15803d"
+                          stroke-width="8"
+                          stroke-dasharray="283"
+                          stroke-dashoffset="78"
+                        />
+                      </svg>
+                      <div
+                        class="absolute inset-0 flex flex-col items-center justify-center"
+                      >
+                        <span class="text-lg font-bold text-green-700"
+                          >72%</span
+                        >
+                        <span class="text-xs text-gray-500">Calorias</span>
+                      </div>
+                    </div>
+                    <p class="text-sm mt-1 font-medium">1450/2000</p>
+                  </div>
+
+                  <!-- Macros -->
+                  <div class="flex flex-col space-y-2 flex-1 ml-4">
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Proteínas</span>
+                        <span class="font-medium">95g / 120g</span>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          class="bg-green-600 h-2 rounded-full"
+                          style="width: 79%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Carboidratos</span>
+                        <span class="font-medium">180g / 250g</span>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          class="bg-yellow-500 h-2 rounded-full"
+                          style="width: 72%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Gorduras</span>
+                        <span class="font-medium">45g / 65g</span>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          class="bg-red-500 h-2 rounded-full"
+                          style="width: 69%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Water Intake -->
+              <div
+                class="bg-white rounded-2xl shadow-md p-4 mb-6 slide-in"
+                style="animation-delay: 0.1s"
+              >
+                <div class="flex justify-between items-center mb-3">
+                  <h3 class="text-lg font-semibold">Consumo de Água</h3>
+                  <span class="text-sm text-green-600 font-medium"
+                    >1.2L / 2.5L</span
+                  >
+                </div>
+                <div class="flex items-center mb-3">
+                  <div
+                    class="relative w-full bg-green-50 rounded-xl h-12 overflow-hidden"
+                  >
+                    <div
+                      class="absolute top-0 left-0 h-full bg-green-400 rounded-xl"
+                      style="width: 48%"
+                    ></div>
+                    <div
+                      class="absolute top-0 left-0 w-full h-full flex items-center justify-center"
+                    >
+                      <div class="flex items-center">
+                        <span class="text-green-700 water-drop">💧</span>
+                        <span class="ml-1 font-medium text-green-700">48%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="tabela_consumo_id">
+                  <table id="tabela-registros">
+                    <thead>
+                      <tr>
+                        <th>Quantidade (ml)</th>
+                        <th>Data e Hora</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Linhas serão adicionadas aqui -->
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="flex justify-between">
+                  <button
+                    class="flex-1 bg-green-50 text-green-700 py-2 rounded-xl text-sm font-medium mr-2 hover:bg-green-100 transition"
+                    id="add-water"
+                  >
+                    + 250ml
+                  </button>
+                  <button
+                    class="flex-1 bg-green-600 text-white py-2 rounded-xl text-sm font-medium hover:bg-green-700 transition"
+                    id="register-water"
+                  >
+                    Registrar
+                  </button>
+                </div>
+              </div>
+
+              <!-- Today's Meals -->
+              <div class="mb-6 slide-in" style="animation-delay: 0.2s">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-lg font-semibold">Refeições de Hoje</h3>
+                  <button
+                    class="text-sm text-green-600 font-medium"
+                    id="view-all-meals"
+                  >
+                    Ver todas
+                  </button>
+                </div>
+
+                <div class="space-y-3">
+                  <!-- Breakfast -->
+                  <div class="bg-white rounded-2xl shadow-md p-3 meal-item">
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center">
+                        <div class="bg-yellow-100 p-2 rounded-xl mr-3">
+                          <span class="text-yellow-500">☀️</span>
+                        </div>
+                        <div>
+                          <h4 class="font-medium">Café da Manhã</h4>
+                          <p class="text-xs text-gray-500">07:30 • 420 kcal</p>
+                        </div>
+                      </div>
+                      <div class="flex items-center">
+                        <span
+                          class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium mr-2"
+                          >Completo</span
+                        >
+                        <span class="text-gray-400">▶️</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Lunch -->
+                  <div class="bg-white rounded-2xl shadow-md p-3 meal-item">
+                    <div class="flex justify-between items-center">
+                      <div class="flex items-center">
+                        <div class="bg-orange-100 p-2 rounded-xl mr-3">
+                          <span class="text-orange-500">🕛</span>
+                        </div>
+                        <div>
+                          <h4 class="font-medium">Almoço</h4>
+                          <p class="text-xs text-gray-500">12:30 • 650 kcal</p>
+                        </div>
+                      </div>
+                      <div class="flex items-center">
+                        <span
+                          class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium mr-2"
+                          >Completo</span
+                        >
+                        <span class="text-gray-400">▶️</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Today's Workout -->
+              <div class="mb-6 slide-in" style="animation-delay: 0.3s">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-lg font-semibold">Treino de Hoje</h3>
+                  <button
+                    class="text-sm text-green-600 font-medium"
+                    id="view-all-workouts"
+                  >
+                    Ver todos
+                  </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-md p-4">
+                  <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center">
+                      <div class="bg-green-100 p-2 rounded-xl mr-3">
+                        <span class="text-green-600">💪</span>
+                      </div>
+                      <div>
+                        <h4 class="font-medium">Treino de Força</h4>
+                        <p class="text-xs text-gray-500">18:00 • 45 min</p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-xs bg-yellow-100 text-yellow-600 py-1 px-2 rounded-full font-medium"
+                      >Pendente</span
+                    >
+                  </div>
+
+                  <div class="flex justify-between text-sm mb-2">
+                    <span class="text-gray-500">Progresso</span>
+                    <span class="font-medium">0/5 exercícios</span>
+                  </div>
+
+                  <div class="w-full bg-gray-200 rounded-full h-2 mb-3">
+                    <div
+                      class="bg-green-600 h-2 rounded-full"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+
+                  <button
+                    class="w-full bg-green-600 text-white py-2 rounded-xl text-sm font-medium hover:bg-green-700 transition"
+                    id="start-workout"
+                  >
+                    Iniciar Treino
+                  </button>
+                </div>
+              </div>
+
+              <!-- Stats Grid -->
+              <div class="mb-6 slide-in" style="animation-delay: 0.4s">
+                <h3 class="text-lg font-semibold mb-4">
+                  Estatísticas da Semana
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-white rounded-2xl shadow-md p-3 stat-card">
+                    <div class="flex items-center mb-2">
+                      <div class="bg-green-100 p-1.5 rounded-lg mr-2">
+                        <span class="text-green-700">📈</span>
+                      </div>
+                      <span class="text-sm font-medium">Proteínas</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                      <span class="text-xl font-bold">95g</span>
+                      <span class="text-xs text-green-600"
+                        >+12%
+                        <span class="text-gray-500"
+                          >vs. semana passada</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl shadow-md p-3 stat-card">
+                    <div class="flex items-center mb-2">
+                      <div class="bg-green-100 p-1.5 rounded-lg mr-2">
+                        <span class="text-green-700">🏋️</span>
+                      </div>
+                      <span class="text-sm font-medium">Treinos</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                      <span class="text-xl font-bold">3/4</span>
+                      <span class="text-xs text-green-600"
+                        >+1
+                        <span class="text-gray-500"
+                          >vs. semana passada</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+
+          <!-- Meals Screen -->
+          <div id="meals-screen" class="screen">
+            <!-- Header -->
+            <header
+              class="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 pt-8 pb-16 rounded-b-3xl shadow-lg"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <h1 class="text-2xl font-bold">FitNutri</h1>
+                  <p class="text-xl">
+                    Olá, <span class="user-nome">Usuário</span>!
+                  </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <button
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-green-600">🔔</span>
+                  </button>
+                  <button
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                  >
+                    <span>👤</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h2 class="text-xl font-semibold">Refeições</h2>
+                <p class="text-green-100 text-sm">Planeje sua alimentação</p>
+              </div>
+            </header>
+
+            <main class="px-4 -mt-10">
+              <!-- Improved Tabs -->
+              <div class="bg-white rounded-2xl shadow-md mb-6">
+                <div class="flex justify-between">
+                  <button
+                    class="flex-1 py-3 text-center text-sm font-medium menu-item active"
+                    data-meal-tab="today"
+                  >
+                    Hoje
+                  </button>
+                  <button
+                    class="flex-1 py-3 text-center text-sm font-medium text-gray-500"
+                    data-meal-tab="recipes"
+                  >
+                    Receitas
+                  </button>
+                </div>
+              </div>
+
+              <!-- Tab Content -->
+              <div id="today-tab" class="tab-content active">
+                <!-- Resumo Diário -->
+                <div class="bg-white rounded-2xl shadow-md p-6 mb-6 slide-in">
+                  <h3 class="text-lg font-semibold mb-4">Resumo Diário</h3>
+
+                  <!-- Container Flex para os Totais -->
+                  <div class="flex justify-between items-center mb-6">
+                    <!-- Calorias -->
+                    <div class="text-center">
+                      <div class="text-sm text-gray-500 mb-1">Calorias</div>
+                      <div class="text-2xl font-bold text-gray-800" id="total-calorias">
+                        0
+                      </div>
+                      <div class="text-xs font-medium px-2 py-1 rounded-full bg-green-100 text-green-700 inline-block mt-1" id="perc-calorias">
+                        0% da meta
+                      </div>
+                    </div>
+
+                    <!-- Proteínas -->
+                    <div class="text-center">
+                      <div class="text-sm text-gray-500 mb-1">Proteínas</div>
+                      <div class="text-2xl font-bold text-gray-800" id="total-proteinas">
+                        0g
+                      </div>
+                      <div class="text-xs font-medium px-2 py-1 rounded-full bg-green-100 text-green-700 inline-block mt-1" id="perc-proteinas">
+                        0% da meta
+                      </div>
+                    </div>
+
+                    <!-- Carboidratos -->
+                    <div class="text-center">
+                      <div class="text-sm text-gray-500 mb-1">Carboidratos</div>
+                      <div class="text-2xl font-bold text-gray-800" id="total-carboidratos">
+                        0g
+                      </div>
+                      <div class="text-xs font-medium px-2 py-1 rounded-full bg-yellow-100 text-yellow-600 inline-block mt-1" id="perc-carboidratos">
+                        0% da meta
+                      </div>
+                    </div>
+
+                    <!-- Gorduras -->
+                    <div class="text-center">
+                      <div class="text-sm text-gray-500 mb-1">Gorduras</div>
+                      <div class="text-2xl font-bold text-gray-800" id="total-gorduras">
+                        0g
+                      </div>
+                      <div class="text-xs font-medium px-2 py-1 rounded-full bg-red-100 text-red-600 inline-block mt-1" id="perc-gorduras">
+                        0% da meta
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Barras de Progresso -->
+                  <div class="space-y-3">
+                    <!-- Barra de Proteínas -->
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Proteínas</span>
+                        <span class="font-medium text-green-700"
+                          ><span id="proteinas-atual">0</span>/<span id="proteinas-meta">120</span>g</span
+                        >
+                      </div>
+                      <div class="w-full bg-gray-100 rounded-full h-2.5">
+                        <div
+                          class="bg-green-600 h-2.5 rounded-full transition-all duration-300"
+                          style="width: 0%"
+                          id="barra-proteinas"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- Barra de Carboidratos -->
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Carboidratos</span>
+                        <span class="font-medium text-yellow-600"
+                          ><span id="carboidratos-atual">0</span>/<span id="carboidratos-meta">250</span>g</span
+                        >
+                      </div>
+                      <div class="w-full bg-gray-100 rounded-full h-2.5">
+                        <div
+                          class="bg-yellow-500 h-2.5 rounded-full transition-all duration-300"
+                          style="width: 0%"
+                          id="barra-carboidratos"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- Barra de Gorduras -->
+                    <div>
+                      <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Gorduras</span>
+                        <span class="font-medium text-red-600"
+                          ><span id="gorduras-atual">0</span>/<span id="gorduras-meta">65</span>g</span
+                        >
+                      </div>
+                      <div class="w-full bg-gray-100 rounded-full h-2.5">
+                        <div
+                          class="bg-red-500 h-2.5 rounded-full transition-all duration-300"
+                          style="width: 0%"
+                          id="barra-gorduras"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Meal Time Navigation -->
+                <div
+                  class="flex space-x-2 mb-4 overflow-x-auto py-1 px-1 -mx-1 fade-in"
+                >
+                  <button
+                    class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">☀️</span>
+                    Café da Manhã
+                  </button>
+                  <button
+                    class="bg-orange-100 text-orange-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🕛</span>
+                    Almoço
+                  </button>
+                  <button
+                    class="bg-red-100 text-red-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🌇</span>
+                    Jantar
+                  </button>
+                  <button
+                    class="bg-purple-100 text-purple-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🍎</span>
+                    Lanches
+                  </button>
+                </div>
+
+                
+                <!-- Meals List -->
+                 
+                <div id="refeicoes-container" class="space-y-4">
+                    <div
+                    class="bg-white rounded-2xl shadow-md overflow-hidden slide-in"
+                    style="animation-delay: 0.1s"
+                  >
+                    <div
+                      class="bg-yellow-100 px-4 py-3 flex justify-between items-center" data-meal-header
+                    >
+                      <div class="flex items-center">
+                        <div class="bg-yellow-200 p-2 rounded-lg mr-3">
+                          <span class="text-yellow-600" data-meal-emoji>☀️</span>
+                        </div>
+                        <div>
+                          <h4 class="font-medium" contenteditable="false" data-meal-title="Café da Manhã">
+                            Café da Manhã
+                          </h4>
+                          <p
+                            class="text-xs text-gray-500"
+                            contenteditable="false"  data-meal-time-calories
+                          >
+                            07:30 • 420 kcal
+                          </p>
+                        </div>
+                      </div>
+                      <select
+                        class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium" data-meal-status
+                      >
+                        <option value="completo">Completo</option>
+                        <option value="pendente">Pendente</option>
+                      </select>
+                    </div>
+
+                    <div class="p-4">
+                      <div class="space-y-3" data-food-container>
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥚</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Ovos Cozidos</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                2 unidades • 140 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            14g P
+                          </div>
+                        </div>
+
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🍞</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Pão integral</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                2 fatias • 160 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            6g P
+                          </div>
+                        </div>
+
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥑</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Abacate</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                1/2 unidade • 120 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            2g P
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="mt-4 pt-3 border-t border-gray-100 flex justify-between"
+                      >
+                        <button
+                          class="edit-meal-btn text-sm text-gray-500 flex items-center" data-action="editar-refeicao"
+                        >
+                          <span class="mr-1">✏️</span>
+                          Editar
+                        </button>
+
+                        <button
+                         id="cafe_da_manha" onclick="updateAlimentoTurno('cafe_da_manha')" class="add-meal-item-btn text-sm text-green-700 flex items-center" data-action="adicionar-item"
+                        >
+                          <span class="mr-1">➕</span>
+                          Adicionar item
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Lunch -->
+                  <div
+                    class="bg-white rounded-2xl shadow-md overflow-hidden slide-in"
+                    style="animation-delay: 0.2s"
+                  >
+                    <div
+                      class="bg-orange-100 px-4 py-3 flex justify-between items-center" data-meal-header
+                    >
+                      <div class="flex items-center">
+                        <div class="bg-orange-200 p-2 rounded-lg mr-3">
+                          <span class="text-orange-600" data-meal-emoji>🕛</span>
+                        </div>
+                        <div>
+                          <h4 class="font-medium" data-meal-title="Almoço">Almoço</h4>
+                          <p class="text-xs text-gray-500" data-meal-time-calories>12:30 • 650 kcal</p>
+                        </div>
+                      </div>
+                      <select
+                        class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium" data-meal-status
+                      >
+                        <option value="completo">Completo</option>
+                        <option value="pendente">Pendente</option>
+                      </select>
+                    </div>
+
+                    <div class="p-4">
+                      <div class="space-y-3" data-food-container>
+                        <div class="flex justify-between items-center"data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🍗</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Frango grelhado</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                150g • 250 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            35g P
+                          </div>
+                        </div>
+
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🍚</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Arroz integral</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                100g • 150 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            3g P
+                          </div>
+                        </div>
+
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji >🥗</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Salada verde</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                Porção • 50 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            2g P
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="mt-4 pt-3 border-t border-gray-100 flex justify-between"
+                      >
+                        <button
+                          class="edit-meal-btn text-sm text-gray-500 flex items-center" data-action="editar-refeicao"
+                        >
+                          <span class="mr-1">✏️</span>
+                          Editar
+                        </button>
+
+                        <button
+                          id="almoco"  onclick="updateAlimentoTurno('almoco')"  class="add-meal-item-btn text-sm text-green-700 flex items-center" data-action="adicionar-item"
+                        >
+                          <span class="mr-1">➕</span>
+                          Adicionar item
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Dinner - Pending -->
+                  <div
+                    class="bg-white rounded-2xl shadow-md overflow-hidden slide-in"
+                    style="animation-delay: 0.3s"
+                  >
+                    <div
+                      class="bg-red-100 px-4 py-3 flex justify-between items-center" data-meal-header
+                    >
+                      <div class="flex items-center">
+                        <div class="bg-red-200 p-2 rounded-lg mr-3">
+                          <span class="text-red-600" data-food-emoji>🌇</span>
+                        </div>
+                        <div>
+                          <h4 class="font-medium" data-meal-title="Jantar">Jantar</h4>
+                          <p class="text-xs text-gray-500" data-meal-time-calories>
+                            19:00hs • 580 kcal
+                          </p>
+                        </div>
+                      </div>
+                      <select
+                        class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium" data-meal-status
+                      >
+                        <option value="completo">Completo</option>
+                        <option value="pendente">Pendente</option>
+                      </select>
+                    </div>
+
+                    <div class="p-4">
+                      <div class="space-y-3" data-food-container>
+                        <!-- Alimento 1 -->
+                        <div class="flex justify-between items-center" data-food-item >
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥩</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Bife Grelhado</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                150g • 280 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            32g P
+                          </div>
+                        </div>
+
+                        <!-- Alimento 2 -->
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥦</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Brócolis</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                100g • 55 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            3.7g P
+                          </div>
+                        </div>
+
+                        <!-- Alimento 3 -->
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥔</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Batata Doce</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                150g • 135 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            2g P
+                          </div>
+                        </div>
+
+                        <!-- Alimento 4 -->
+                        <div class="flex justify-between items-center" data-food-item>
+                          <div class="flex items-center">
+                            <div
+                              class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                            >
+                              <span class="text-gray-500" data-food-emoji>🥗</span>
+                            </div>
+                            <div>
+                              <h5 class="font-medium" data-food-name>Salada Mista</h5>
+                              <p class="text-xs text-gray-500" data-food-details>
+                                100g • 110 kcal
+                              </p>
+                            </div>
+                          </div>
+                          <div class="text-sm font-medium text-gray-700" data-food-protein>
+                            1.5g P
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="mt-4 pt-3 border-t border-gray-100 flex justify-between"
+                      >
+                        <button
+                          class="edit-meal-btn text-sm text-gray-500 flex items-center" data-action="editar-refeicao"
+                        >
+                          <span class="mr-1">✏️</span>
+                          Editar
+                        </button>
+
+                        <button
+                          id="jantar" onclick="updateAlimentoTurno('jantar')" class="add-meal-item-btn text-sm text-green-700 flex items-center" data-action="adicionar-item"
+                        >
+                          <span class="mr-1">➕</span>
+                          Adicionar item
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+            
+                  <div id="meal-list" class="space-y-4 mt-4">
+                    <!-- As refeições serão adicionadas aqui -->
+                  </div>
+
+                  <!-- Add Meal Button -->
+                  <button
+                    class="w-full bg-green-600 text-white py-3 rounded-xl font-medium flex items-center justify-center slide-in"
+                    style="animation-delay: 0.4s"
+                    id="add-meal-btn"
+                  >
+                    <span class="mr-2">➕</span>
+                    Adicionar Refeição
+                  </button>
+                  <button
+                    class="w-full bg-green-100 text-green-700 py-3 rounded-xl font-medium flex items-center justify-center slide-in mt-2"
+                    style="animation-delay: 0.5s"
+                    id="suggest-meal-btn"
+                  >
+                    <span class="mr-2">💡</span>
+                    Sugerir Refeição
+                  </button>
+                </div>
+              </div>
+
+              <!-- Recipes Tab Content -->
+              <div id="recipes-tab" class="tab-content">
+                <!-- Search Bar -->
+                <div class="relative mb-6 fade-in">
+                  <input
+                    type="text"
+                    placeholder="Buscar receitas..."
+                    class="w-full bg-white rounded-xl py-3 px-4 pl-10 shadow-md focus:outline-none focus:ring-2 focus:ring-green-600"
+                  />
+                  <span class="absolute left-3 top-3 text-gray-400">🔍</span>
+                </div>
+
+                <!-- Categories -->
+                <div
+                  class="flex space-x-2 mb-6 overflow-x-auto py-1 px-1 -mx-1 fade-in"
+                >
+                  <button
+                    class="bg-green-100 text-green-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🥗</span>
+                    Saudável
+                  </button>
+                  <button
+                    class="bg-green-100 text-green-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🥩</span>
+                    Rico em Proteína
+                  </button>
+                  <button
+                    class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">⚡</span>
+                    Baixo Carb
+                  </button>
+                  <button
+                    class="bg-purple-100 text-purple-700 px-4 py-2 rounded-xl text-sm font-medium flex items-center meal-tag"
+                  >
+                    <span class="mr-1">🌱</span>
+                    Vegetariano
+                  </button>
+                </div>
+
+                <!-- Featured Recipe -->
+                <div class="mb-6 slide-in">
+                  <h3 class="text-lg font-semibold mb-3">
+                    Receita em Destaque
+                  </h3>
+                  <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                    <div
+                      class="h-40 bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center"
+                    >
+                      <span class="text-4xl">🥗</span>
+                    </div>
+                    <div class="p-4">
+                      <div class="flex justify-between items-center mb-2">
+                        <h4 class="font-medium text-lg">Bowl de Proteína</h4>
+                        <div class="flex items-center">
+                          <span class="text-yellow-500 mr-1">★</span>
+                          <span class="text-sm font-medium">4.8</span>
+                        </div>
+                      </div>
+                      <p class="text-sm text-gray-600 mb-3">
+                        Uma refeição completa e balanceada com frango grelhado,
+                        quinoa, abacate e vegetais.
+                      </p>
+                      <div class="flex justify-between text-sm mb-4">
+                        <div class="flex items-center">
+                          <span class="text-gray-500 mr-1">⏱️</span>
+                          <span>20 min</span>
+                        </div>
+                        <div class="flex items-center">
+                          <span class="text-gray-500 mr-1">🔥</span>
+                          <span>450 kcal</span>
+                        </div>
+                        <div class="flex items-center">
+                          <span class="text-gray-500 mr-1">🥩</span>
+                          <span>35g proteína</span>
+                        </div>
+                      </div>
+                      <button
+                        class="w-full bg-green-600 text-white py-2 rounded-xl text-sm font-medium"
+                        id="view-featured-recipe"
+                      >
+                        Ver Receita
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Recipe List -->
+                <div class="mb-6">
+                  <h3 class="text-lg font-semibold mb-3">Receitas Populares</h3>
+                  <div class="space-y-4">
+                    <!-- Recipe 1 -->
+                    <div
+                      class="bg-white rounded-2xl shadow-md p-3 recipe-item slide-in"
+                      style="animation-delay: 0.1s"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-20 h-20 bg-gray-100 rounded-xl mr-3 flex items-center justify-center"
+                        >
+                          <span class="text-2xl">🍲</span>
+                        </div>
+                        <div class="flex-1">
+                          <div class="flex justify-between items-start">
+                            <h4 class="font-medium">Omelete de Espinafre</h4>
+                            <div class="flex items-center">
+                              <span class="text-yellow-500 mr-1">★</span>
+                              <span class="text-sm">4.5</span>
+                            </div>
+                          </div>
+                          <p class="text-xs text-gray-500 mb-1">
+                            Café da manhã • 15 min
+                          </p>
+                          <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">320 kcal</span>
+                            <span class="text-green-700">22g proteína</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Recipe 2 -->
+                    <div
+                      class="bg-white rounded-2xl shadow-md p-3 recipe-item slide-in"
+                      style="animation-delay: 0.2s"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-20 h-20 bg-gray-100 rounded-xl mr-3 flex items-center justify-center"
+                        >
+                          <span class="text-2xl">🥙</span>
+                        </div>
+                        <div class="flex-1">
+                          <div class="flex justify-between items-start">
+                            <h4 class="font-medium">Wrap de Frango</h4>
+                            <div class="flex items-center">
+                              <span class="text-yellow-500 mr-1">★</span>
+                              <span class="text-sm">4.7</span>
+                            </div>
+                          </div>
+                          <p class="text-xs text-gray-500 mb-1">
+                            Almoço • 10 min
+                          </p>
+                          <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">380 kcal</span>
+                            <span class="text-green-700">28g proteína</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Recipe 3 -->
+                    <div
+                      class="bg-white rounded-2xl shadow-md p-3 recipe-item slide-in"
+                      style="animation-delay: 0.3s"
+                    >
+                      <div class="flex">
+                        <div
+                          class="w-20 h-20 bg-gray-100 rounded-xl mr-3 flex items-center justify-center"
+                        >
+                          <span class="text-2xl">🍜</span>
+                        </div>
+                        <div class="flex-1">
+                          <div class="flex justify-between items-start">
+                            <h4 class="font-medium">Sopa de Legumes</h4>
+                            <div class="flex items-center">
+                              <span class="text-yellow-500 mr-1">★</span>
+                              <span class="text-sm">4.3</span>
+                            </div>
+                          </div>
+                          <p class="text-xs text-gray-500 mb-1">
+                            Jantar • 25 min
+                          </p>
+                          <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">220 kcal</span>
+                            <span class="text-green-700">8g proteína</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+
+          <!-- Workouts Screen -->
+          <div id="workouts-screen" class="screen">
+            <!-- Header -->
+            <header
+              class="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 pt-8 pb-16 rounded-b-3xl shadow-lg"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <h1 class="text-2xl font-bold">FitNutri</h1>
+                  <p class="text-xl">
+                    Olá, <span class="user-nome">Usuário</span>!
+                  </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <button
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-green-600">🔔</span>
+                  </button>
+                  <button
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                  >
+                    <span>👤</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h2 class="text-xl font-semibold">Treinos</h2>
+                <p class="text-green-100 text-sm">Mantenha-se ativo</p>
+              </div>
+            </header>
+
+            <main class="px-4 -mt-10">
+              <!-- Weekly Summary -->
+              <div class="bg-white rounded-2xl shadow-md p-4 mb-6 slide-in">
+                <h3 class="text-lg font-semibold mb-3">Resumo Semanal</h3>
+                <div class="flex justify-between mb-3">
+                  <div class="text-center">
+                    <div class="text-sm text-gray-500">Treinos</div>
+                    <div class="text-xl font-bold">3/4</div>
+                    <div class="text-xs text-green-700">75% concluído</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-sm text-gray-500">Tempo</div>
+                    <div class="text-xl font-bold">120min</div>
+                    <div class="text-xs text-green-700">+30min vs. meta</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-sm text-gray-500">Calorias</div>
+                    <div class="text-xl font-bold">450</div>
+                    <div class="text-xs text-green-700">queimadas</div>
+                  </div>
+                </div>
+
+                <!-- Weekly Progress Bar -->
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-1">
+                  <div
+                    class="bg-green-600 h-2 rounded-full"
+                    style="width: 75%"
+                  ></div>
+                </div>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span>Seg</span>
+                  <span>Ter</span>
+                  <span>Qua</span>
+                  <span>Qui</span>
+                  <span>Sex</span>
+                  <span>Sáb</span>
+                  <span>Dom</span>
+                </div>
+              </div>
+
+              <!-- Today's Workouts -->
+              <h3 class="text-lg font-semibold mb-3">Treinos de Hoje</h3>
+
+              <div
+                class="bg-white rounded-2xl shadow-md p-4 mb-4 slide-in"
+                style="animation-delay: 0.1s"
+              >
+                <div class="flex justify-between items-center mb-3">
+                  <div class="flex items-center">
+                    <div class="bg-green-100 p-2 rounded-xl mr-3">
+                      <span class="text-green-600">🏋️</span>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">Treino de Força</h4>
+                      <p class="text-xs text-gray-500">18:00 • 45 min</p>
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs bg-yellow-100 text-yellow-600 py-1 px-2 rounded-full font-medium"
+                  >
+                    Pendente
+                  </span>
+                </div>
+
+                <div class="space-y-2 mb-4">
+                  <div
+                    class="flex justify-between items-center bg-gray-50 p-2 rounded-lg exercise-item"
+                  >
+                    <div class="flex items-center">
+                      <span class="text-gray-500 mr-2">1</span>
+                      <span>Agachamento</span>
+                    </div>
+                    <div class="text-xs text-gray-500">3 x 12</div>
+                  </div>
+                  <div
+                    class="flex justify-between items-center bg-gray-50 p-2 rounded-lg exercise-item"
+                  >
+                    <div class="flex items-center">
+                      <span class="text-gray-500 mr-2">2</span>
+                      <span>Supino</span>
+                    </div>
+                    <div class="text-xs text-gray-500">3 x 10</div>
+                  </div>
+                  <div
+                    class="flex justify-between items-center bg-gray-50 p-2 rounded-lg exercise-item"
+                  >
+                    <div class="flex items-center">
+                      <span class="text-gray-500 mr-2">3</span>
+                      <span>Remada</span>
+                    </div>
+                    <div class="text-xs text-gray-500">3 x 12</div>
+                  </div>
+                </div>
+
+                <button
+                  class="bg-green-600 text-white w-full py-2 rounded-xl text-sm font-medium hover:bg-green-700 transition"
+                  id="start-workout-btn"
+                >
+                  Iniciar Treino
+                </button>
+              </div>
+
+              <div
+                class="bg-white rounded-2xl shadow-md p-4 mb-4 slide-in"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex justify-between items-center mb-3">
+                  <div class="flex items-center">
+                    <div class="bg-green-100 p-2 rounded-xl mr-3">
+                      <span class="text-green-600">🏃</span>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">Cardio</h4>
+                      <p class="text-xs text-gray-500">07:30 • 30 min</p>
+                    </div>
+                  </div>
+                  <span
+                    class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium"
+                  >
+                    Completo
+                  </span>
+                </div>
+
+                <div class="space-y-2 mb-4">
+                  <div
+                    class="flex justify-between items-center bg-gray-50 p-2 rounded-lg exercise-item"
+                  >
+                    <div class="flex items-center">
+                      <span class="text-green-500 mr-2">✓</span>
+                      <span>Corrida</span>
+                    </div>
+                    <div class="text-xs text-gray-500">20 min</div>
+                  </div>
+                  <div
+                    class="flex justify-between items-center bg-gray-50 p-2 rounded-lg exercise-item"
+                  >
+                    <div class="flex items-center">
+                      <span class="text-green-500 mr-2">✓</span>
+                      <span>Pular corda</span>
+                    </div>
+                    <div class="text-xs text-gray-500">10 min</div>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full bg-gray-100 text-gray-700 py-2 rounded-xl text-sm font-medium hover:bg-gray-200 transition"
+                  id="view-workout-details"
+                >
+                  Ver Detalhes
+                </button>
+              </div>
+
+              <!-- Add Workout Button -->
+              <button
+                class="w-full bg-green-600 text-white py-3 rounded-xl font-medium flex items-center justify-center mb-6 slide-in hover:bg-green-700 transition"
+                style="animation-delay: 0.3s"
+                id="add-workout"
+              >
+                <span class="mr-2">➕</span>
+                Adicionar Treino
+              </button>
+            </main>
+          </div>
+
+          <!-- Community Screen -->
+          <div id="community-screen" class="screen">
+            <!-- Header -->
+            <header
+              class="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 pt-8 pb-16 rounded-b-3xl shadow-lg"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <h1 class="text-2xl font-bold">FitNutri</h1>
+                  <p class="text-xl">
+                    Olá, <span class="user-nome">Usuário</span>!
+                  </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <button
+                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-green-600">🔔</span>
+                  </button>
+                  <button
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                  >
+                    <span>👤</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <h2 class="text-xl font-semibold">Comunidade</h2>
+                <p class="text-green-100 text-sm">Conecte-se e inspire-se</p>
+              </div>
+            </header>
+
+            <main class="px-4 -mt-10">
+              <!-- Create Post Card -->
+              <div class="bg-white rounded-2xl shadow-md p-4 mb-6 slide-in">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <span>👤</span>
+                  </div>
+                  <div
+                    class="bg-gray-100 rounded-xl py-2 px-4 flex-1 text-gray-500"
+                  >
+                    O que você quer compartilhar hoje?
+                  </div>
+                </div>
+                <div class="flex justify-between">
+                  <button class="flex items-center text-sm text-gray-500">
+                    <span class="mr-1">📷</span>
+                    Foto
+                  </button>
+                  <button class="flex items-center text-sm text-gray-500">
+                    <span class="mr-1">📊</span>
+                    Progresso
+                  </button>
+                  <button class="flex items-center text-sm text-gray-500">
+                    <span class="mr-1">🏋️</span>
+                    Treino
+                  </button>
+                  <button class="flex items-center text-sm text-gray-500">
+                    <span class="mr-1">🍽️</span>
+                    Refeição
+                  </button>
+                </div>
+              </div>
+
+              <!-- Featured Challenge -->
+              <div
+                class="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl shadow-md p-4 mb-6 text-white slide-in"
+                style="animation-delay: 0.1s"
+              >
+                <div class="flex justify-between items-start mb-3">
+                  <h3 class="text-lg font-semibold">Desafio da Semana</h3>
+                  <span
+                    class="bg-white bg-opacity-20 text-xs py-1 px-2 rounded-full"
+                    >3 dias restantes</span
+                  >
+                </div>
+
+                <h4 class="text-xl font-bold mb-2">30 Dias de Treino</h4>
+                <p class="text-sm text-green-100 mb-3">
+                  Complete pelo menos 20 minutos de atividade física todos os
+                  dias durante 30 dias.
+                </p>
+
+                <div class="bg-white bg-opacity-20 rounded-xl p-3 mb-4">
+                  <div class="flex justify-between text-sm mb-2">
+                    <span>Seu progresso</span>
+                    <span>18/30 dias</span>
+                  </div>
+                  <div
+                    class="w-full bg-white bg-opacity-20 rounded-full h-2 mb-1"
+                  >
+                    <div
+                      class="bg-white h-2 rounded-full"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="flex justify-between">
+                  <div class="text-center">
+                    <div class="text-2xl font-bold">42</div>
+                    <div class="text-xs text-green-100">participantes</div>
+                  </div>
+                  <button
+                    class="bg-white text-green-700 py-2 px-4 rounded-xl text-sm font-medium"
+                  >
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+
+              <!-- Community Posts -->
+              <h3 class="text-lg font-semibold mb-4">Feed da Comunidade</h3>
+
+              <!-- Post 1 -->
+              <div
+                class="bg-white rounded-2xl shadow-md mb-6 overflow-hidden post-card slide-in"
+                style="animation-delay: 0.2s"
+              >
+                <div class="p-4">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <span>👩</span>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">Ana Silva</h4>
+                      <p class="text-xs text-gray-500">Há 2 horas</p>
+                    </div>
+                  </div>
+
+                  <p class="text-sm text-gray-700 mb-4">
+                    Completei meu primeiro treino de 5km hoje! 🏃‍♀️ Muito feliz
+                    com meu progresso nas últimas semanas. Quem mais está no
+                    desafio de corrida?
+                  </p>
+
+                  <div
+                    class="bg-gray-100 h-48 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <span class="text-4xl">🏃‍♀️</span>
+                  </div>
+
+                  <div
+                    class="flex justify-between border-t border-gray-100 pt-3"
+                  >
+                    <button
+                      class="flex items-center text-sm text-gray-500 like-button"
+                    >
+                      <span class="mr-1">❤️</span>
+                      24 curtidas
+                    </button>
+                    <button
+                      class="flex items-center text-sm text-gray-500 comment-button"
+                    >
+                      <span class="mr-1">💬</span>
+                      8 comentários
+                    </button>
+                    <button
+                      class="flex items-center text-sm text-gray-500 share-button"
+                    >
+                      <span class="mr-1">🔄</span>
+                      Compartilhar
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Post 2 -->
+              <div
+                class="bg-white rounded-2xl shadow-md mb-6 overflow-hidden post-card slide-in"
+                style="animation-delay: 0.3s"
+              >
+                <div class="p-4">
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                    >
+                      <span>👨</span>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">Carlos Mendes</h4>
+                      <p class="text-xs text-gray-500">Há 5 horas</p>
+                    </div>
+                  </div>
+
+                  <p class="text-sm text-gray-700 mb-4">
+                    Experimentei esta receita de bowl proteico hoje e ficou
+                    incrível! Compartilhando para quem também está buscando
+                    opções saudáveis e rápidas.
+                  </p>
+
+                  <div
+                    class="bg-gray-100 h-48 rounded-xl flex items-center justify-center mb-4"
+                  >
+                    <span class="text-4xl">🥗</span>
+                  </div>
+
+                  <div
+                    class="flex justify-between border-t border-gray-100 pt-3"
+                  >
+                    <button
+                      class="flex items-center text-sm text-gray-500 like-button"
+                    >
+                      <span class="mr-1">❤️</span>
+                      36 curtidas
+                    </button>
+                    <button
+                      class="flex items-center text-sm text-gray-500 comment-button"
+                    >
+                      <span class="mr-1">💬</span>
+                      12 comentários
+                    </button>
+                    <button
+                      class="flex items-center text-sm text-gray-500 share-button"
+                    >
+                      <span class="mr-1">🔄</span>
+                      Compartilhar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <!-- Fixed Bottom Navigation -->
+        <nav class="bottom-nav flex justify-around items-center hidden">
+          <button
+            class="bottom-nav-item active flex flex-col items-center w-1/4 py-2"
+            data-screen="home-screen"
+          >
+            <i class="bx bxs-home nav-icon"></i>
+            <span class="text-xs font-medium">Início</span>
+          </button>
+
+          <button
+            class="bottom-nav-item flex flex-col items-center w-1/4 py-2"
+            data-screen="meals-screen"
+          >
+            <i class="bx bxs-bowl-rice nav-icon"></i>
+            <span class="text-xs font-medium">Refeições</span>
+          </button>
+
+          <button
+            class="bottom-nav-item flex flex-col items-center w-1/4 py-2"
+            data-screen="workouts-screen"
+          >
+            <i class="bx bx-dumbbell nav-icon"></i>
+            <span class="text-xs font-medium">Treinos</span>
+          </button>
+
+          <button
+            class="bottom-nav-item flex flex-col items-center w-1/4 py-2"
+            data-screen="community-screen"
+          >
+            <i class="bx bx-group nav-icon"></i>
+            <span class="text-xs font-medium">Comunidade</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+
+    
+                  <!-- Templete -->
+                  <div id="meal-template" class="hidden">
+                    <div
+                      id="templete"
+                      class="bg-white rounded-2xl shadow-md overflow-hidden slide-in"
+                      style="animation-delay: 0.2s"
+                    >
+                      <div
+                        class="bg-orange-100 px-4 py-3 flex justify-between items-center" data-meal-header
+                      >
+                        <div class="flex items-center">
+                          <div class="bg-orange-200 p-2 rounded-lg mr-3">
+                            <span class="text-orange-600" data-meal-emoji>🕛</span>
+                          </div>
+                          <div>
+                            <h4 class="font-medium" contenteditable="false" data-meal-title>
+                              Nova Refeição
+                            </h4>
+                            <p
+                              class="text-xs text-gray-500"
+                              contenteditable="false" data-meal-time-calories
+                            >
+                              00:00 • 0 kcal
+                            </p>
+                          </div>
+                        </div>
+                        <select
+                          class="text-xs bg-green-100 text-green-600 py-1 px-2 rounded-full font-medium" data-meal-status
+                        >
+                          <option value="completo">Completo</option>
+                          <option value="pendente">Pendente</option>
+                        </select>
+                      </div>
+
+                      <div class="p-4">
+                        <div class="space-y-3" data-meal-container>
+                         <div class="flex justify-between items-center" data-food-item>
+                              <div class="flex items-center">
+                                  <div class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center">
+                                      <span class="text-gray-500" data-food-emoji>🍽️</span>
+                                  </div>
+                                  <div class="food-info relative"> <!-- Importante: classe relative aqui -->
+                                      <h5 class="font-medium" data-food-name>Adicionar Alimento</h5>
+                                      <div class="sugestoes-lista hidden absolute top-full left-0 w-64 bg-white shadow-lg rounded-lg mt-1 z-50 max-h-48 overflow-y-auto"></div>
+                                      <p class="text-xs text-gray-500" data-food-details>Quantidade • 0 kcal</p>
+                                  </div>
+                              </div>
+                              <div class="text-sm font-medium text-gray-700" data-food-protein>0g P</div>
+                          </div>
+
+                           <div class="flex justify-between items-center" data-food-item>
+                            <div class="flex items-center">
+                              <div
+                                class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                              >
+                                <span class="text-gray-500" data-food-emoji>🍽️</span>
+                              </div>
+                              <div>
+                                <h5 class="font-medium" data-food-name>Adicionar Alimento</h5>
+                                <p class="text-xs text-gray-500" data-food-details>
+                                  Quantidade • 0 kcal
+                                </p>
+                              </div>
+                            </div>
+                            <div class="text-sm font-medium text-gray-700" data-food-protein>
+                              0g P
+                            </div>
+                          </div>
+
+                           <div class="flex justify-between items-center" data-food-item>
+                            <div class="flex items-center">
+                              <div
+                                class="w-10 h-10 bg-gray-100 rounded-lg mr-3 flex items-center justify-center"
+                              >
+                                <span class="text-gray-500" data-food-emoji>🍽️</span>
+                              </div>
+                              <div>
+                                <h5 class="font-medium" data-food-name>Adicionar Alimento</h5>
+                                <p class="text-xs text-gray-500" data-food-details>
+                                  Quantidade • 0 kcal
+                                </p>
+                              </div>
+                            </div>
+                            <div class="text-sm font-medium text-gray-700" data-food-protein>
+                              0g P
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="mt-4 pt-3 border-t border-gray-100 flex justify-between" 
+                        >
+                          <button
+                            class="edit-meal-btn text-sm text-gray-500 flex items-center" data-action="editar-refeicao"
+                          >
+                            <span class="mr-1">✏️</span>
+                            Editar
+                          </button>
+
+                          <button
+                            class="add-meal-item-btn text-sm text-green-700 flex items-center" data-action="adicionar-item"
+                          >
+                            <span class="mr-1">➕</span>
+                            Adicionar item
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+    
+   
+   <script src="dataService.js" defer></script>
+    <script src="login.js" defer></script>
+    <script src="refeicoes.js" defer></script>
+    <script src="appscript.js" defer></script>
+   
+  </body>
+</html>
+
+<script>
+  
+let tipoRefeicaoGlobal;
+
+  function updateAlimentoTurno(tipo_r){
+    tipoRefeicaoGlobal = tipo_r
+  }
+  
+// const stringBruta = localStorage.getItem("usuarios");
+// const stringLimpa = JSON.parse(stringBruta);
+// const jsonFinal = JSON.parse(stringLimpa);
+// localStorage.setItem("usuarios", JSON.stringify(jsonFinal));
+
+
+console.log("foi");
+
+</script>

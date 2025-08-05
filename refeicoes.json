@@ -1,0 +1,1052 @@
+{
+  "refeicoes": {
+    "cafe_da_manha": [
+      {
+        "id": 1,
+        "nome": "Café completo tradicional",
+        "alimentos": [
+          {
+            "nome": "Café com leite e açúcar",
+            "porcao": "1 xícara (200 ml)",
+            "calorias": 110,
+            "proteinas": "3 g",
+            "carboidratos": "12 g",
+            "gorduras": "5 g",
+            "icone": "☕"
+          },
+          {
+            "nome": "Pão francês",
+            "porcao": "1 unidade (50 g)",
+            "calorias": 135,
+            "proteinas": "3 g",
+            "carboidratos": "23.6 g",
+            "gorduras": "3.1 g",
+            "icone": "🍞"
+          },
+          {
+            "nome": "Queijo minas frescal",
+            "porcao": "1 fatia (30 g)",
+            "calorias": 70,
+            "proteinas": "6 g",
+            "carboidratos": "1 g",
+            "gorduras": "5 g",
+            "icone": "🧀"
+          },
+          {
+            "nome": "Mamão papaia",
+            "porcao": "1/2 unidade média (150 g)",
+            "calorias": 60,
+            "proteinas": "0.6 g",
+            "carboidratos": "15 g",
+            "gorduras": "0.1 g",
+            "icone": "🍈"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 375,
+          "proteinas": "12.6 g",
+          "carboidratos": "51.6 g",
+          "gorduras": "13.2 g"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Vitamina energética",
+        "alimentos": [
+          {
+            "nome": "Vitamina de banana com leite",
+            "porcao": "1 copo (300 ml)",
+            "calorias": 190,
+            "proteinas": "5 g",
+            "carboidratos": "30 g",
+            "gorduras": "4 g",
+            "icone": "🥤"
+          },
+          {
+            "nome": "Aveia em flocos",
+            "porcao": "30 g",
+            "calorias": 117,
+            "proteinas": "5 g",
+            "carboidratos": "20 g",
+            "gorduras": "2.4 g",
+            "icone": "🌾"
+          },
+          {
+            "nome": "Mel orgânico",
+            "porcao": "10 g",
+            "calorias": 30,
+            "proteinas": "0.1 g",
+            "carboidratos": "8 g",
+            "gorduras": "0 g",
+            "icone": "🍯"
+          },
+          {
+            "nome": "Castanha de caju",
+            "porcao": "1 punhado (30 g)",
+            "calorias": 170,
+            "proteinas": "5 g",
+            "carboidratos": "9 g",
+            "gorduras": "14 g",
+            "icone": "🌰"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 507,
+          "proteinas": "15.1 g",
+          "carboidratos": "67 g",
+          "gorduras": "20.4 g"
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Tapioca reforçada",
+        "alimentos": [
+          {
+            "nome": "Tapioca com queijo",
+            "porcao": "1 unidade média (120 g)",
+            "calorias": 290,
+            "proteinas": "10 g",
+            "carboidratos": "35 g",
+            "gorduras": "12 g",
+            "icone": "🥙"
+          },
+          {
+            "nome": "Ovo cozido",
+            "porcao": "100 g (~2 ovos)",
+            "calorias": 155,
+            "proteinas": "12 g",
+            "carboidratos": "1.1 g",
+            "gorduras": "11 g",
+            "icone": "🥚"
+          },
+          {
+            "nome": "Suco de laranja natural",
+            "porcao": "1 copo (200 ml)",
+            "calorias": 110,
+            "proteinas": "2 g",
+            "carboidratos": "25 g",
+            "gorduras": "0.5 g",
+            "icone": "🍊"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 555,
+          "proteinas": "24 g",
+          "carboidratos": "61.1 g",
+          "gorduras": "23.5 g"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Iogurte com granola e frutas",
+        "alimentos": [
+          {
+            "nome": "Iogurte natural com granola",
+            "porcao": "1 pote (170 g)",
+            "calorias": 220,
+            "proteinas": "6 g",
+            "carboidratos": "30 g",
+            "gorduras": "7 g",
+            "icone": "🍶"
+          },
+          {
+            "nome": "Banana nanica",
+            "porcao": "1 unidade média (~100 g)",
+            "calorias": 87,
+            "proteinas": "1 g",
+            "carboidratos": "22 g",
+            "gorduras": "0.2 g",
+            "icone": "🍌"
+          },
+          {
+            "nome": "Linhaça dourada",
+            "porcao": "10 g",
+            "calorias": 53,
+            "proteinas": "1.8 g",
+            "carboidratos": "2.9 g",
+            "gorduras": "4.3 g",
+            "icone": "🌱"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 360,
+          "proteinas": "8.8 g",
+          "carboidratos": "54.9 g",
+          "gorduras": "11.5 g"
+        }
+      },
+      {
+        "id": 5,
+        "nome": "Pão integral com peito de peru",
+        "alimentos": [
+          {
+            "nome": "Pão de forma integral",
+            "porcao": "1 fatia (30 g)",
+            "calorias": 70,
+            "proteinas": "3 g",
+            "carboidratos": "12 g",
+            "gorduras": "1 g",
+            "icone": "🍞"
+          },
+          {
+            "nome": "Peito de peru grelhado",
+            "porcao": "50 g",
+            "calorias": 68,
+            "proteinas": "14.5 g",
+            "carboidratos": "0 g",
+            "gorduras": "0.8 g",
+            "icone": "🦃"
+          },
+          {
+            "nome": "Requeijão",
+            "porcao": "1 colher de sopa (20 g)",
+            "calorias": 50,
+            "proteinas": "3 g",
+            "carboidratos": "1 g",
+            "gorduras": "4 g",
+            "icone": "🧀"
+          },
+          {
+            "nome": "Café preto",
+            "porcao": "1 xícara (50 ml)",
+            "calorias": 2,
+            "proteinas": "0.3 g",
+            "carboidratos": "0.2 g",
+            "gorduras": "0 g",
+            "icone": "☕"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 190,
+          "proteinas": "20.8 g",
+          "carboidratos": "13.2 g",
+          "gorduras": "5.8 g"
+        }
+      }
+    ],
+    "almoco": [
+      {
+        "id": 1,
+        "nome": "Prato tradicional brasileiro",
+        "alimentos": [
+          {
+            "nome": "Arroz branco cozido",
+            "porcao": "100 g",
+            "calorias": 130,
+            "proteinas": "2.7 g",
+            "carboidratos": "28 g",
+            "gorduras": "0.3 g",
+            "icone": "🍚"
+          },
+          {
+            "nome": "Feijão carioca cozido",
+            "porcao": "100 g",
+            "calorias": 76,
+            "proteinas": "4.8 g",
+            "carboidratos": "13 g",
+            "gorduras": "0.5 g",
+            "icone": "🫘"
+          },
+          {
+            "nome": "Peito de frango grelhado",
+            "porcao": "100 g",
+            "calorias": 165,
+            "proteinas": "31 g",
+            "carboidratos": "0 g",
+            "gorduras": "3.6 g",
+            "icone": "🍗"
+          },
+          {
+            "nome": "Couve refogada",
+            "porcao": "1 colher de servir (50 g)",
+            "calorias": 40,
+            "proteinas": "2 g",
+            "carboidratos": "5 g",
+            "gorduras": "2 g",
+            "icone": "🥬"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 411,
+          "proteinas": "40.5 g",
+          "carboidratos": "46 g",
+          "gorduras": "6.4 g"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Refeição fitness",
+        "alimentos": [
+          {
+            "nome": "Quinoa cozida",
+            "porcao": "100 g",
+            "calorias": 120,
+            "proteinas": "4.4 g",
+            "carboidratos": "21 g",
+            "gorduras": "1.9 g",
+            "icone": "🌾"
+          },
+          {
+            "nome": "Salmão grelhado",
+            "porcao": "100 g",
+            "calorias": 208,
+            "proteinas": "20 g",
+            "carboidratos": "0 g",
+            "gorduras": "13 g",
+            "icone": "🐟"
+          },
+          {
+            "nome": "Brócolis cozido",
+            "porcao": "100 g",
+            "calorias": 34,
+            "proteinas": "3 g",
+            "carboidratos": "6 g",
+            "gorduras": "0.4 g",
+            "icone": "🥦"
+          },
+          {
+            "nome": "Abacate",
+            "porcao": "1/4 unidade (50 g)",
+            "calorias": 80,
+            "proteinas": "1 g",
+            "carboidratos": "4 g",
+            "gorduras": "7.5 g",
+            "icone": "🥑"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 442,
+          "proteinas": "28.4 g",
+          "carboidratos": "31 g",
+          "gorduras": "22.8 g"
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Carne com batata-doce",
+        "alimentos": [
+          {
+            "nome": "Carne bovina magra (assada)",
+            "porcao": "100 g",
+            "calorias": 250,
+            "proteinas": "30 g",
+            "carboidratos": "0 g",
+            "gorduras": "18 g",
+            "icone": "🥩"
+          },
+          {
+            "nome": "Batata-doce assada",
+            "porcao": "100 g",
+            "calorias": 90,
+            "proteinas": "2 g",
+            "carboidratos": "20 g",
+            "gorduras": "0.2 g",
+            "icone": "🍠"
+          },
+          {
+            "nome": "Salada de tomate",
+            "porcao": "1 unidade média (100 g)",
+            "calorias": 18,
+            "proteinas": "0.9 g",
+            "carboidratos": "3.9 g",
+            "gorduras": "0.2 g",
+            "icone": "🍅"
+          },
+          {
+            "nome": "Azeite de oliva extravirgem",
+            "porcao": "1 colher de sopa (10 ml)",
+            "calorias": 90,
+            "proteinas": "0 g",
+            "carboidratos": "0 g",
+            "gorduras": "10 g",
+            "icone": "🫒"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 448,
+          "proteinas": "32.9 g",
+          "carboidratos": "23.9 g",
+          "gorduras": "28.4 g"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Moqueca de peixe",
+        "alimentos": [
+          {
+            "nome": "Moqueca de peixe",
+            "porcao": "1 posta (200 g)",
+            "calorias": 280,
+            "proteinas": "30 g",
+            "carboidratos": "5 g",
+            "gorduras": "15 g",
+            "icone": "🐟"
+          },
+          {
+            "nome": "Arroz integral",
+            "porcao": "100 g",
+            "calorias": 111,
+            "proteinas": "2.6 g",
+            "carboidratos": "23 g",
+            "gorduras": "0.9 g",
+            "icone": "🌾"
+          },
+          {
+            "nome": "Farofa de bacon",
+            "porcao": "1 colher de servir (30 g)",
+            "calorias": 150,
+            "proteinas": "2 g",
+            "carboidratos": "15 g",
+            "gorduras": "9 g",
+            "icone": "🥓"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 541,
+          "proteinas": "34.6 g",
+          "carboidratos": "43 g",
+          "gorduras": "24.9 g"
+        }
+      },
+      {
+        "id": 5,
+        "nome": "Frango com legumes",
+        "alimentos": [
+          {
+            "nome": "Peito de frango grelhado",
+            "porcao": "100 g",
+            "calorias": 165,
+            "proteinas": "31 g",
+            "carboidratos": "0 g",
+            "gorduras": "3.6 g",
+            "icone": "🍗"
+          },
+          {
+            "nome": "Purê de batata-doce",
+            "porcao": "100 g",
+            "calorias": 107,
+            "proteinas": "2 g",
+            "carboidratos": "25 g",
+            "gorduras": "0.3 g",
+            "icone": "🍠"
+          },
+          {
+            "nome": "Berinjela cozida",
+            "porcao": "100 g",
+            "calorias": 35,
+            "proteinas": "0.8 g",
+            "carboidratos": "8 g",
+            "gorduras": "0.2 g",
+            "icone": "🍆"
+          },
+          {
+            "nome": "Azeite de oliva extravirgem",
+            "porcao": "1 colher de sopa (10 ml)",
+            "calorias": 90,
+            "proteinas": "0 g",
+            "carboidratos": "0 g",
+            "gorduras": "10 g",
+            "icone": "🫒"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 397,
+          "proteinas": "33.8 g",
+          "carboidratos": "33 g",
+          "gorduras": "14.1 g"
+        }
+      }
+    ],
+    "merenda_da_tarde": [
+      {
+        "id": 1,
+        "nome": "Lanche proteico",
+        "alimentos": [
+          {
+            "nome": "Pão de queijo",
+            "porcao": "1 unidade média (40 g)",
+            "calorias": 150,
+            "proteinas": "3 g",
+            "carboidratos": "16 g",
+            "gorduras": "8 g",
+            "icone": "🧀"
+          },
+          {
+            "nome": "Ovo cozido",
+            "porcao": "50 g (~1 ovo)",
+            "calorias": 78,
+            "proteinas": "6 g",
+            "carboidratos": "0.6 g",
+            "gorduras": "5.5 g",
+            "icone": "🥚"
+          },
+          {
+            "nome": "Suco de maracujá natural",
+            "porcao": "1 copo (200 ml)",
+            "calorias": 90,
+            "proteinas": "1 g",
+            "carboidratos": "22 g",
+            "gorduras": "0.5 g",
+            "icone": "🍹"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 318,
+          "proteinas": "10 g",
+          "carboidratos": "38.6 g",
+          "gorduras": "14 g"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Frutas com iogurte",
+        "alimentos": [
+          {
+            "nome": "Maçã",
+            "porcao": "1 unidade média (~100 g)",
+            "calorias": 85,
+            "proteinas": "0.5 g",
+            "carboidratos": "21 g",
+            "gorduras": "0.2 g",
+            "icone": "🍎"
+          },
+          {
+            "nome": "Iogurte grego natural",
+            "porcao": "100 g",
+            "calorias": 97,
+            "proteinas": "9 g",
+            "carboidratos": "4 g",
+            "gorduras": "5 g",
+            "icone": "🥛"
+          },
+          {
+            "nome": "Amêndoas",
+            "porcao": "30 g",
+            "calorias": 170,
+            "proteinas": "6 g",
+            "carboidratos": "6 g",
+            "gorduras": "15 g",
+            "icone": "🌰"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 352,
+          "proteinas": "15.5 g",
+          "carboidratos": "31 g",
+          "gorduras": "20.2 g"
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Cookie com café",
+        "alimentos": [
+          {
+            "nome": "Cookie com gotas de chocolate",
+            "porcao": "2 unidades (30 g)",
+            "calorias": 148,
+            "proteinas": "2.2 g",
+            "carboidratos": "25.9 g",
+            "gorduras": "3.9 g",
+            "icone": "🍪"
+          },
+          {
+            "nome": "Café preto",
+            "porcao": "1 xícara (50 ml)",
+            "calorias": 2,
+            "proteinas": "0.3 g",
+            "carboidratos": "0.2 g",
+            "gorduras": "0 g",
+            "icone": "☕"
+          },
+          {
+            "nome": "Queijo minas frescal",
+            "porcao": "1 fatia (30 g)",
+            "calorias": 70,
+            "proteinas": "6 g",
+            "carboidratos": "1 g",
+            "gorduras": "5 g",
+            "icone": "🧀"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 220,
+          "proteinas": "8.5 g",
+          "carboidratos": "27.1 g",
+          "gorduras": "8.9 g"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Sanduíche natural",
+        "alimentos": [
+          {
+            "nome": "Sanduíche natural de frango",
+            "porcao": "1 unidade (200 g)",
+            "calorias": 350,
+            "proteinas": "20 g",
+            "carboidratos": "30 g",
+            "gorduras": "15 g",
+            "icone": "🥪"
+          },
+          {
+            "nome": "Água de coco natural",
+            "porcao": "1 copo (200 ml)",
+            "calorias": 40,
+            "proteinas": "1 g",
+            "carboidratos": "9 g",
+            "gorduras": "0.2 g",
+            "icone": "🥥"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 390,
+          "proteinas": "21 g",
+          "carboidratos": "39 g",
+          "gorduras": "15.2 g"
+        }
+      },
+      {
+        "id": 5,
+        "nome": "Bolo com chá",
+        "alimentos": [
+          {
+            "nome": "Bolo de laranja",
+            "porcao": "1 fatia média (80 g)",
+            "calorias": 220,
+            "proteinas": "3 g",
+            "carboidratos": "36 g",
+            "gorduras": "8 g",
+            "icone": "🍰"
+          },
+          {
+            "nome": "Chá mate",
+            "porcao": "1 xícara (200 ml)",
+            "calorias": 5,
+            "proteinas": "0 g",
+            "carboidratos": "1 g",
+            "gorduras": "0 g",
+            "icone": "🍵"
+          },
+          {
+            "nome": "Castanha-do-pará",
+            "porcao": "30 g",
+            "calorias": 187,
+            "proteinas": "4.2 g",
+            "carboidratos": "3.5 g",
+            "gorduras": "19 g",
+            "icone": "🌰"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 412,
+          "proteinas": "7.2 g",
+          "carboidratos": "40.5 g",
+          "gorduras": "27 g"
+        }
+      }
+    ],
+    "jantar": [
+      {
+        "id": 1,
+        "nome": "Jantar leve",
+        "alimentos": [
+          {
+            "nome": "Omelete de claras",
+            "porcao": "100 g",
+            "calorias": 120,
+            "proteinas": "13 g",
+            "carboidratos": "1 g",
+            "gorduras": "7 g",
+            "icone": "🍳"
+          },
+          {
+            "nome": "Pão sírio integral",
+            "porcao": "1 unidade (50 g)",
+            "calorias": 130,
+            "proteinas": "5 g",
+            "carboidratos": "25 g",
+            "gorduras": "1 g",
+            "icone": "🥙"
+          },
+          {
+            "nome": "Salada de rúcula",
+            "porcao": "100 g",
+            "calorias": 25,
+            "proteinas": "2.6 g",
+            "carboidratos": "3.7 g",
+            "gorduras": "0.7 g",
+            "icone": "🥬"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 275,
+          "proteinas": "20.6 g",
+          "carboidratos": "29.7 g",
+          "gorduras": "8.7 g"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Sopa de legumes com frango",
+        "alimentos": [
+          {
+            "nome": "Peito de frango grelhado",
+            "porcao": "50 g",
+            "calorias": 83,
+            "proteinas": "15.5 g",
+            "carboidratos": "0 g",
+            "gorduras": "1.8 g",
+            "icone": "🍗"
+          },
+          {
+            "nome": "Abóbora cabotiá cozida",
+            "porcao": "100 g",
+            "calorias": 48,
+            "proteinas": "1 g",
+            "carboidratos": "12 g",
+            "gorduras": "0.1 g",
+            "icone": "🎃"
+          },
+          {
+            "nome": "Cenoura crua",
+            "porcao": "1 unidade média (80 g)",
+            "calorias": 33,
+            "proteinas": "0.8 g",
+            "carboidratos": "7.7 g",
+            "gorduras": "0.2 g",
+            "icone": "🥕"
+          },
+          {
+            "nome": "Torrada integral",
+            "porcao": "3 unidades (30 g)",
+            "calorias": 116,
+            "proteinas": "2.6 g",
+            "carboidratos": "20.3 g",
+            "gorduras": "2.7 g",
+            "icone": "🍞"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 280,
+          "proteinas": "19.9 g",
+          "carboidratos": "40 g",
+          "gorduras": "4.8 g"
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Torta de legumes",
+        "alimentos": [
+          {
+            "nome": "Torta de legumes",
+            "porcao": "1 fatia (100 g)",
+            "calorias": 180,
+            "proteinas": "6 g",
+            "carboidratos": "20 g",
+            "gorduras": "9 g",
+            "icone": "🥧"
+          },
+          {
+            "nome": "Salada de repolho",
+            "porcao": "1 prato (100 g)",
+            "calorias": 30,
+            "proteinas": "1 g",
+            "carboidratos": "7 g",
+            "gorduras": "0.2 g",
+            "icone": "🥗"
+          },
+          {
+            "nome": "Suco de laranja natural",
+            "porcao": "1 copo (200 ml)",
+            "calorias": 110,
+            "proteinas": "2 g",
+            "carboidratos": "25 g",
+            "gorduras": "0.5 g",
+            "icone": "🍊"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 320,
+          "proteinas": "9 g",
+          "carboidratos": "52 g",
+          "gorduras": "9.7 g"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Salmão com quinoa",
+        "alimentos": [
+          {
+            "nome": "Salmão grelhado",
+            "porcao": "100 g",
+            "calorias": 208,
+            "proteinas": "20 g",
+            "carboidratos": "0 g",
+            "gorduras": "13 g",
+            "icone": "🐟"
+          },
+          {
+            "nome": "Quinoa cozida",
+            "porcao": "100 g",
+            "calorias": 120,
+            "proteinas": "4.4 g",
+            "carboidratos": "21 g",
+            "gorduras": "1.9 g",
+            "icone": "🌾"
+          },
+          {
+            "nome": "Espinafre cru",
+            "porcao": "100 g",
+            "calorias": 23,
+            "proteinas": "2.9 g",
+            "carboidratos": "3.6 g",
+            "gorduras": "0.4 g",
+            "icone": "🥬"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 351,
+          "proteinas": "27.3 g",
+          "carboidratos": "24.6 g",
+          "gorduras": "15.3 g"
+        }
+      },
+      {
+        "id": 5,
+        "nome": "Frango com batata-doce",
+        "alimentos": [
+          {
+            "nome": "Peito de frango grelhado",
+            "porcao": "100 g",
+            "calorias": 165,
+            "proteinas": "31 g",
+            "carboidratos": "0 g",
+            "gorduras": "3.6 g",
+            "icone": "🍗"
+          },
+          {
+            "nome": "Batata-doce assada",
+            "porcao": "100 g",
+            "calorias": 90,
+            "proteinas": "2 g",
+            "carboidratos": "20 g",
+            "gorduras": "0.2 g",
+            "icone": "🍠"
+          },
+          {
+            "nome": "Couve refogada",
+            "porcao": "1 colher de servir (50 g)",
+            "calorias": 40,
+            "proteinas": "2 g",
+            "carboidratos": "5 g",
+            "gorduras": "2 g",
+            "icone": "🥬"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 295,
+          "proteinas": "35 g",
+          "carboidratos": "25 g",
+          "gorduras": "5.8 g"
+        }
+      }
+    ],
+    "merenda_da_noite": [
+      {
+        "id": 1,
+        "nome": "Ceia reconfortante",
+        "alimentos": [
+          {
+            "nome": "Leite desnatado",
+            "porcao": "200 ml",
+            "calorias": 80,
+            "proteinas": "6 g",
+            "carboidratos": "12 g",
+            "gorduras": "0.3 g",
+            "icone": "🥛"
+          },
+          {
+            "nome": "Torrada integral",
+            "porcao": "3 unidades (30 g)",
+            "calorias": 116,
+            "proteinas": "2.6 g",
+            "carboidratos": "20.3 g",
+            "gorduras": "2.7 g",
+            "icone": "🍞"
+          },
+          {
+            "nome": "Queijo cottage",
+            "porcao": "50 g",
+            "calorias": 49,
+            "proteinas": "5.5 g",
+            "carboidratos": "1.5 g",
+            "gorduras": "2.2 g",
+            "icone": "🧀"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 245,
+          "proteinas": "14.1 g",
+          "carboidratos": "33.8 g",
+          "gorduras": "5.2 g"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Chá com biscoito",
+        "alimentos": [
+          {
+            "nome": "Chá mate",
+            "porcao": "1 xícara (200 ml)",
+            "calorias": 5,
+            "proteinas": "0 g",
+            "carboidratos": "1 g",
+            "gorduras": "0 g",
+            "icone": "🍵"
+          },
+          {
+            "nome": "Biscoito cream cracker integral",
+            "porcao": "30 g",
+            "calorias": 130,
+            "proteinas": "3 g",
+            "carboidratos": "20 g",
+            "gorduras": "4 g",
+            "icone": "🍘"
+          },
+          {
+            "nome": "Queijo minas frescal",
+            "porcao": "1 fatia (30 g)",
+            "calorias": 70,
+            "proteinas": "6 g",
+            "carboidratos": "1 g",
+            "gorduras": "5 g",
+            "icone": "🧀"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 205,
+          "proteinas": "9 g",
+          "carboidratos": "22 g",
+          "gorduras": "9 g"
+        }
+      },
+      {
+        "id": 3,
+        "nome": "Iogurte com mel",
+        "alimentos": [
+          {
+            "nome": "Iogurte natural desnatado",
+            "porcao": "1 pote (170 g)",
+            "calorias": 90,
+            "proteinas": "9 g",
+            "carboidratos": "6 g",
+            "gorduras": "0.5 g",
+            "icone": "🥛"
+          },
+          {
+            "nome": "Mel orgânico",
+            "porcao": "10 g",
+            "calorias": 30,
+            "proteinas": "0.1 g",
+            "carboidratos": "8 g",
+            "gorduras": "0 g",
+            "icone": "🍯"
+          },
+          {
+            "nome": "Nozes",
+            "porcao": "30 g",
+            "calorias": 185,
+            "proteinas": "4.3 g",
+            "carboidratos": "4 g",
+            "gorduras": "18 g",
+            "icone": "🌰"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 305,
+          "proteinas": "13.4 g",
+          "carboidratos": "18 g",
+          "gorduras": "18.5 g"
+        }
+      },
+      {
+        "id": 4,
+        "nome": "Pudim de leite",
+        "alimentos": [
+          {
+            "nome": "Pudim de leite",
+            "porcao": "1 fatia (100 g)",
+            "calorias": 200,
+            "proteinas": "5 g",
+            "carboidratos": "35 g",
+            "gorduras": "5 g",
+            "icone": "🍮"
+          },
+          {
+            "nome": "Chá de camomila",
+            "porcao": "1 xícara (200 ml)",
+            "calorias": 2,
+            "proteinas": "0 g",
+            "carboidratos": "0.5 g",
+            "gorduras": "0 g",
+            "icone": "🍵"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 202,
+          "proteinas": "5 g",
+          "carboidratos": "35.5 g",
+          "gorduras": "5 g"
+        }
+      },
+        {
+        "id": 5,
+        "nome": "Banana com aveia e canela",
+        "alimentos": [
+          {
+            "nome": "Banana prata",
+            "porcao": "1 unidade média (90 g)",
+            "calorias": 80,
+            "proteinas": "1 g",
+            "carboidratos": "21 g",
+            "gorduras": "0.2 g",
+            "icone": "🍌"
+          },
+          {
+            "nome": "Aveia em flocos finos",
+            "porcao": "1 colher de sopa (15 g)",
+            "calorias": 58,
+            "proteinas": "2 g",
+            "carboidratos": "10 g",
+            "gorduras": "1.5 g",
+            "icone": "🌾"
+          },
+          {
+            "nome": "Canela em pó",
+            "porcao": "1 pitada (1 g)",
+            "calorias": 3,
+            "proteinas": "0.1 g",
+            "carboidratos": "1 g",
+            "gorduras": "0.1 g",
+            "icone": "🧂"
+          },
+          {
+            "nome": "Leite morno desnatado",
+            "porcao": "1/2 xícara (100 ml)",
+            "calorias": 40,
+            "proteinas": "3 g",
+            "carboidratos": "6 g",
+            "gorduras": "0.1 g",
+            "icone": "🥛"
+          }
+        ],
+        "totalNutricional": {
+          "calorias": 181,
+          "proteinas": "6.1 g",
+          "carboidratos": "38 g",
+          "gorduras": "1.9 g"
+        }
+      }
+    ]
+  }
+}
